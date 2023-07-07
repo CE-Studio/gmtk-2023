@@ -8,4 +8,4 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-    print(Input.get_action_strength("game_move"))
+    rotate(Input.get_axis("game_move_left", "game_move_right") * delta * PI)

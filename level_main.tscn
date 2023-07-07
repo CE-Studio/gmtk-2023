@@ -24,3 +24,6 @@ grow_vertical = 2
 [node name="Sprite2D" type="Sprite2D" parent="Control"]
 texture = ExtResource("1_u3fus")
 script = ExtResource("2_qb34w")
+
+[node name="Line2D" type="Line2D" parent="Control/Sprite2D"]
+points = PackedVector2Array(-153, -50, -14, -171, 174, -18, -91, 244)
