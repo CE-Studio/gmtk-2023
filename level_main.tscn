@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://ckbq288ev4klm"]
+[gd_scene load_steps=3 format=3 uid="uid://dlfx7m2tmti6l"]
 
 [ext_resource type="Texture2D" uid="uid://dvokjyy68i4h2" path="res://backing.svg" id="1_u3fus"]
 [ext_resource type="Script" path="res://levelrun.gd" id="2_qb34w"]
