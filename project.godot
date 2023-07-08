@@ -8,6 +8,12 @@
 
 config_version=5
 
+[Gameplay]
+
+Audio/MusicVolume=50.0
+ScreenShake=50.0
+Audio/SoundVolume=50.0
+
 [application]
 
 config/name="The Drop Cup"

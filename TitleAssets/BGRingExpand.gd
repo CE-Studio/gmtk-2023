@@ -1,6 +1,6 @@
 extends TextureRect
 
-var _scaleFactor = 7.5
+@export var scaleFactor = 5.25
 var _minScale = 0.001
 var _maxScale = 2.5
 
@@ -11,7 +11,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	_scaleRing(scale.x + (scale.x * _scaleFactor * delta))
+	_scaleRing(scale.x + (scale.x * scaleFactor * delta))
 	if scale.x >= _maxScale:
 		_scaleRing(_minScale)
 

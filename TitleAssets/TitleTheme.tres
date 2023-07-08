@@ -1,0 +1,27 @@
+[gd_resource type="Theme" load_steps=9 format=3 uid="uid://b7331fuc54lly"]
+
+[ext_resource type="FontFile" uid="uid://dau2ntvbjgd1m" path="res://Font/Fredoka-VariableFont_700.ttf" id="1_lvn25"]
+[ext_resource type="Texture2D" uid="uid://f35wt7vnrwyh" path="res://TitleAssets/ButtonHover.svg" id="2_xwuwn"]
+[ext_resource type="Texture2D" uid="uid://cf7srn83xi1gv" path="res://TitleAssets/ButtonNormal.svg" id="3_oajvp"]
+[ext_resource type="Texture2D" uid="uid://b3fmi24kfkp18" path="res://TitleAssets/ButtonPressed.svg" id="4_yce30"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5oh85"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_a82cj"]
+texture = ExtResource("2_xwuwn")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_eaob4"]
+texture = ExtResource("3_oajvp")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_83gu5"]
+texture = ExtResource("4_yce30")
+
+[resource]
+default_font = ExtResource("1_lvn25")
+Button/font_sizes/font_size = 32
+Button/fonts/font = ExtResource("1_lvn25")
+Button/styles/focus = SubResource("StyleBoxEmpty_5oh85")
+Button/styles/hover = SubResource("StyleBoxTexture_a82cj")
+Button/styles/normal = SubResource("StyleBoxTexture_eaob4")
+Button/styles/pressed = SubResource("StyleBoxTexture_83gu5")
+Label/font_sizes/font_size = 40
