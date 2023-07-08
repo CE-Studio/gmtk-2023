@@ -1,4 +1,4 @@
-extends Sprite2D
+extends RigidBody2D
 
 
 # Called when the node enters the scene tree for the first time.
@@ -8,7 +8,9 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+    position = Vector2.ZERO
+    
     if ProjectSettings.get_setting("Gameplay/InvertRotation"):
-        rotate(Input.get_axis("game_move_right", "game_move_left") * delta * PI)
+        apply_torque(Input.get_axis("game_move_right", "game_move_left") * delta * 8)
     else:
-        rotate(Input.get_axis("game_move_left", "game_move_right") * delta * PI)
+        apply_torque(Input.get_axis("game_move_left", "game_move_right") * delta * 8)
