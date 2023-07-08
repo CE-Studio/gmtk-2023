@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://degbb5mdpk2rh"]
+
+[ext_resource type="Texture2D" uid="uid://dujtnx4h81axm" path="res://LevelAssets/Goal.svg" id="1_tdake"]
+[ext_resource type="Texture2D" uid="uid://mduvyssut1pf" path="res://LevelAssets/GoalParticle.svg" id="2_h76xk"]
+
+[sub_resource type="Curve" id="Curve_rknvi"]
+_data = [Vector2(0, 0.945454), 0.0, 0.845, 0, 0, Vector2(1, 0.472727), -2.24545, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Gradient" id="Gradient_16t5j"]
+offsets = PackedFloat32Array(0, 0.117264, 0.527687, 1)
+colors = PackedColorArray(0.596078, 0.952941, 0.972549, 0, 0.619608, 0.956863, 0.972549, 1, 0.619608, 0.827451, 0.984314, 0.839216, 0.290196, 0.564706, 1, 0)
+
+[node name="Goal" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_tdake")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+amount = 6
+lifetime = 1.5
+local_coords = true
+texture = ExtResource("2_h76xk")
+direction = Vector2(0, 0)
+spread = 0.0
+gravity = Vector2(0, 0)
+angular_velocity_min = -200.0
+angular_velocity_max = -50.0
+angle_min = -720.0
+angle_max = 720.0
+scale_amount_min = 0.4
+scale_amount_max = 0.8
+scale_amount_curve = SubResource("Curve_rknvi")
+color = Color(0.682353, 0.854902, 1, 1)
+color_ramp = SubResource("Gradient_16t5j")
