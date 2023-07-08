@@ -1,15 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://dlfx7m2tmti6l"]
+[gd_scene load_steps=5 format=3 uid="uid://dlfx7m2tmti6l"]
 
 [ext_resource type="Texture2D" uid="uid://dvokjyy68i4h2" path="res://backing.svg" id="1_u3fus"]
 [ext_resource type="Script" path="res://levelrun.gd" id="2_qb34w"]
-[ext_resource type="Texture2D" uid="uid://bq7pphjmoitdx" path="res://Player.svg" id="3_hpkti"]
-[ext_resource type="Script" path="res://player.gd" id="3_ud0v8"]
+[ext_resource type="PackedScene" uid="uid://4bns23iolskg" path="res://game components/player.tscn" id="3_viayw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6cdkp"]
 size = Vector2(200, 20)
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_p252l"]
-radius = 22.0227
 
 [node name="Node2D" type="Control"]
 layout_mode = 3
@@ -226,14 +222,4 @@ position = Vector2(-160.501, -277.994)
 rotation = 2.61799
 shape = SubResource("RectangleShape2D_6cdkp")
 
-[node name="player" type="RigidBody2D" parent="Node2D"]
-continuous_cd = 2
-can_sleep = false
-script = ExtResource("3_ud0v8")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/player"]
-shape = SubResource("CircleShape2D_p252l")
-
-[node name="Sprite2D" type="Sprite2D" parent="Node2D/player"]
-scale = Vector2(0.1, 0.1)
-texture = ExtResource("3_hpkti")
+[node name="player" parent="Node2D" instance=ExtResource("3_viayw")]
