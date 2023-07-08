@@ -8,4 +8,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-    rotate(Input.get_axis("game_move_left", "game_move_right") * delta * PI)
+    if ProjectSettings.get_setting("Gameplay/InvertRotation"):
+        rotate(Input.get_axis("game_move_right", "game_move_left") * delta * PI)
+    else:
+        rotate(Input.get_axis("game_move_left", "game_move_right") * delta * PI)

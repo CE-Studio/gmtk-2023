@@ -6,37 +6,41 @@ extends Control
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+    pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+    pass
 
 
 func _on_options_button_pressed():
-	anim.play("MenuToOptions")
+    anim.play("MenuToOptions")
 
 
 func _on_credits_button_pressed():
-	anim.play("MenuToCredits")
+    anim.play("MenuToCredits")
 
 
 func _on_back_button_pressed():
-	anim.play_backwards("MenuToOptions")
+    anim.play_backwards("MenuToOptions")
 
 
 func _on_other_back_button_pressed():
-	anim.play_backwards("MenuToCredits")
+    anim.play_backwards("MenuToCredits")
 
 
 func _on_mus_slider_value_changed(value):
-	ProjectSettings.set_setting("Gameplay/Audio/MusicVolume", value)
+    ProjectSettings.set_setting("Gameplay/Audio/MusicVolume", value)
 
 
 func _on_sfx_slider_value_changed(value):
-	ProjectSettings.set_setting("Gameplay/Audio/SoundVolume", value)
+    ProjectSettings.set_setting("Gameplay/Audio/SoundVolume", value)
 
 
 func _on_shake_slider_value_changed(value):
-	ProjectSettings.set_setting("Gameplay/ScreenShake", value)
+    ProjectSettings.set_setting("Gameplay/ScreenShake", value)
+
+
+func _on_invert_rotation_toggled(button_pressed):
+    ProjectSettings.set_setting("Gameplay/InvertRotation", button_pressed)

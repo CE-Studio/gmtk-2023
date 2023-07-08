@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://ckbq288ev4klm"]
+[gd_scene load_steps=5 format=3 uid="uid://dlfx7m2tmti6l"]
 
 [ext_resource type="Texture2D" uid="uid://dvokjyy68i4h2" path="res://backing.svg" id="1_u3fus"]
 [ext_resource type="Script" path="res://levelrun.gd" id="2_qb34w"]
@@ -39,19 +39,15 @@ script = ExtResource("2_qb34w")
 
 [node name="Node2D2" type="Node2D" parent="Node2D/Sprite2D/Node2D3"]
 rotation = 1.39626
-scale = Vector2(1, 1)
 
 [node name="Node2D4" type="Node2D" parent="Node2D/Sprite2D/Node2D3/Node2D2"]
 rotation = 0.698132
-scale = Vector2(1, 1)
 
 [node name="Node2D2" type="Node2D" parent="Node2D/Sprite2D/Node2D3/Node2D2/Node2D4"]
 rotation = 0.349066
-scale = Vector2(1, 1)
 
 [node name="RigidBody2D2" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D3/Node2D2/Node2D4/Node2D2"]
 rotation = 0.174533
-scale = Vector2(1, 1)
 collision_mask = 0
 freeze = true
 
@@ -61,7 +57,6 @@ shape = SubResource("RectangleShape2D_6cdkp")
 
 [node name="RigidBody2D3" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D3/Node2D2/Node2D4/Node2D2"]
 rotation = 0.349066
-scale = Vector2(1, 1)
 collision_mask = 0
 freeze = true
 
@@ -71,7 +66,6 @@ shape = SubResource("RectangleShape2D_6cdkp")
 
 [node name="RigidBody2D4" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D3/Node2D2/Node2D4/Node2D2"]
 rotation = 0.523599
-scale = Vector2(1, 1)
 collision_mask = 0
 freeze = true
 
@@ -91,7 +85,6 @@ shape = SubResource("RectangleShape2D_6cdkp")
 
 [node name="RigidBody2D2" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D3/Node2D2/Node2D4/Node2D"]
 rotation = 0.174533
-scale = Vector2(1, 1)
 collision_mask = 0
 freeze = true
 
@@ -111,11 +104,9 @@ shape = SubResource("RectangleShape2D_6cdkp")
 
 [node name="Node2D2" type="Node2D" parent="Node2D/Sprite2D/Node2D3/Node2D2/Node2D3"]
 rotation = 0.349066
-scale = Vector2(1, 1)
 
 [node name="RigidBody2D2" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D3/Node2D2/Node2D3/Node2D2"]
 rotation = 0.174533
-scale = Vector2(1, 1)
 collision_mask = 0
 freeze = true
 
@@ -135,7 +126,6 @@ shape = SubResource("RectangleShape2D_6cdkp")
 
 [node name="RigidBody2D2" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D3/Node2D2/Node2D3/Node2D"]
 rotation = 0.174533
-scale = Vector2(1, 1)
 collision_mask = 0
 freeze = true
 
@@ -155,15 +145,12 @@ shape = SubResource("RectangleShape2D_6cdkp")
 
 [node name="Node2D4" type="Node2D" parent="Node2D/Sprite2D/Node2D3/Node2D"]
 rotation = 0.698132
-scale = Vector2(1, 1)
 
 [node name="Node2D2" type="Node2D" parent="Node2D/Sprite2D/Node2D3/Node2D/Node2D4"]
 rotation = 0.349066
-scale = Vector2(1, 1)
 
 [node name="RigidBody2D2" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D3/Node2D/Node2D4/Node2D2"]
 rotation = 0.174533
-scale = Vector2(1, 1)
 collision_mask = 0
 freeze = true
 
@@ -183,7 +170,6 @@ shape = SubResource("RectangleShape2D_6cdkp")
 
 [node name="RigidBody2D2" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D3/Node2D/Node2D4/Node2D"]
 rotation = 0.174533
-scale = Vector2(1, 1)
 collision_mask = 0
 freeze = true
 
@@ -203,11 +189,9 @@ shape = SubResource("RectangleShape2D_6cdkp")
 
 [node name="Node2D2" type="Node2D" parent="Node2D/Sprite2D/Node2D3/Node2D/Node2D3"]
 rotation = 0.349066
-scale = Vector2(1, 1)
 
 [node name="RigidBody2D2" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D3/Node2D/Node2D3/Node2D2"]
 rotation = 0.174533
-scale = Vector2(1, 1)
 collision_mask = 0
 freeze = true
 
@@ -227,7 +211,6 @@ shape = SubResource("RectangleShape2D_6cdkp")
 
 [node name="RigidBody2D2" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D3/Node2D/Node2D3/Node2D"]
 rotation = 0.174533
-scale = Vector2(1, 1)
 collision_mask = 0
 freeze = true
 
@@ -248,19 +231,15 @@ rotation = 3.14159
 
 [node name="Node2D2" type="Node2D" parent="Node2D/Sprite2D/Node2D4"]
 rotation = 1.39626
-scale = Vector2(1, 1)
 
 [node name="Node2D4" type="Node2D" parent="Node2D/Sprite2D/Node2D4/Node2D2"]
 rotation = 0.698132
-scale = Vector2(1, 1)
 
 [node name="Node2D2" type="Node2D" parent="Node2D/Sprite2D/Node2D4/Node2D2/Node2D4"]
 rotation = 0.349066
-scale = Vector2(1, 1)
 
 [node name="RigidBody2D2" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D4/Node2D2/Node2D4/Node2D2"]
 rotation = 0.174533
-scale = Vector2(1, 1)
 collision_mask = 0
 freeze = true
 
@@ -270,7 +249,6 @@ shape = SubResource("RectangleShape2D_6cdkp")
 
 [node name="RigidBody2D3" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D4/Node2D2/Node2D4/Node2D2"]
 rotation = 0.349066
-scale = Vector2(1, 1)
 collision_mask = 0
 freeze = true
 
@@ -280,7 +258,6 @@ shape = SubResource("RectangleShape2D_6cdkp")
 
 [node name="RigidBody2D4" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D4/Node2D2/Node2D4/Node2D2"]
 rotation = 0.523599
-scale = Vector2(1, 1)
 collision_mask = 0
 freeze = true
 
@@ -300,7 +277,6 @@ shape = SubResource("RectangleShape2D_6cdkp")
 
 [node name="RigidBody2D2" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D4/Node2D2/Node2D4/Node2D"]
 rotation = 0.174533
-scale = Vector2(1, 1)
 collision_mask = 0
 freeze = true
 
@@ -320,11 +296,9 @@ shape = SubResource("RectangleShape2D_6cdkp")
 
 [node name="Node2D2" type="Node2D" parent="Node2D/Sprite2D/Node2D4/Node2D2/Node2D3"]
 rotation = 0.349066
-scale = Vector2(1, 1)
 
 [node name="RigidBody2D2" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D4/Node2D2/Node2D3/Node2D2"]
 rotation = 0.174533
-scale = Vector2(1, 1)
 collision_mask = 0
 freeze = true
 
@@ -344,7 +318,6 @@ shape = SubResource("RectangleShape2D_6cdkp")
 
 [node name="RigidBody2D2" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D4/Node2D2/Node2D3/Node2D"]
 rotation = 0.174533
-scale = Vector2(1, 1)
 collision_mask = 0
 freeze = true
 
@@ -364,15 +337,12 @@ shape = SubResource("RectangleShape2D_6cdkp")
 
 [node name="Node2D4" type="Node2D" parent="Node2D/Sprite2D/Node2D4/Node2D"]
 rotation = 0.698132
-scale = Vector2(1, 1)
 
 [node name="Node2D2" type="Node2D" parent="Node2D/Sprite2D/Node2D4/Node2D/Node2D4"]
 rotation = 0.349066
-scale = Vector2(1, 1)
 
 [node name="RigidBody2D2" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D4/Node2D/Node2D4/Node2D2"]
 rotation = 0.174533
-scale = Vector2(1, 1)
 collision_mask = 0
 freeze = true
 
@@ -392,7 +362,6 @@ shape = SubResource("RectangleShape2D_6cdkp")
 
 [node name="RigidBody2D2" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D4/Node2D/Node2D4/Node2D"]
 rotation = 0.174533
-scale = Vector2(1, 1)
 collision_mask = 0
 freeze = true
 
@@ -412,11 +381,9 @@ shape = SubResource("RectangleShape2D_6cdkp")
 
 [node name="Node2D2" type="Node2D" parent="Node2D/Sprite2D/Node2D4/Node2D/Node2D3"]
 rotation = 0.349066
-scale = Vector2(1, 1)
 
 [node name="RigidBody2D2" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D4/Node2D/Node2D3/Node2D2"]
 rotation = 0.174533
-scale = Vector2(1, 1)
 collision_mask = 0
 freeze = true
 
@@ -436,7 +403,6 @@ shape = SubResource("RectangleShape2D_6cdkp")
 
 [node name="RigidBody2D2" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D4/Node2D/Node2D3/Node2D"]
 rotation = 0.174533
-scale = Vector2(1, 1)
 collision_mask = 0
 freeze = true
 
