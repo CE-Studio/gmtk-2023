@@ -485,6 +485,7 @@ offset_top = 20.0
 offset_right = 64.0
 offset_bottom = 920.0
 grow_horizontal = 2
+scale = Vector2(2, 2)
 pivot_offset = Vector2(64, 0)
 texture = ExtResource("2_beuy1")
 
@@ -499,6 +500,7 @@ offset_right = 64.0
 offset_bottom = 920.0
 grow_horizontal = 2
 rotation = 1.0472
+scale = Vector2(2, 2)
 pivot_offset = Vector2(64, 0)
 texture = ExtResource("2_beuy1")
 
@@ -513,6 +515,7 @@ offset_right = 64.0
 offset_bottom = 920.0
 grow_horizontal = 2
 rotation = 2.0944
+scale = Vector2(2, 2)
 pivot_offset = Vector2(64, 0)
 texture = ExtResource("2_beuy1")
 
@@ -527,6 +530,7 @@ offset_right = 64.0
 offset_bottom = 920.0
 grow_horizontal = 2
 rotation = 3.14159
+scale = Vector2(2, 2)
 pivot_offset = Vector2(64, 0)
 texture = ExtResource("2_beuy1")
 
@@ -541,6 +545,7 @@ offset_right = 64.0
 offset_bottom = 920.0
 grow_horizontal = 2
 rotation = 4.18879
+scale = Vector2(2, 2)
 pivot_offset = Vector2(64, 0)
 texture = ExtResource("2_beuy1")
 
@@ -555,6 +560,7 @@ offset_right = 64.0
 offset_bottom = 920.0
 grow_horizontal = 2
 rotation = 5.23599
+scale = Vector2(2, 2)
 pivot_offset = Vector2(64, 0)
 texture = ExtResource("2_beuy1")
 
