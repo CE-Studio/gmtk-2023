@@ -52,7 +52,6 @@ shape = SubResource("RectangleShape2D_6cdkp")
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
 position = Vector2(55.7403, -316.123)
 rotation = -2.96706
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_6cdkp")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
@@ -68,25 +67,21 @@ shape = SubResource("RectangleShape2D_6cdkp")
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
 position = Vector2(206.334, -245.901)
 rotation = -2.44346
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_6cdkp")
 
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
 position = Vector2(245.9, -206.335)
 rotation = -2.26893
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_6cdkp")
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
 position = Vector2(277.994, -160.501)
 rotation = -2.0944
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_6cdkp")
 
 [node name="CollisionShape2D8" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
 position = Vector2(301.641, -109.789)
 rotation = -1.91986
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_6cdkp")
 
 [node name="CollisionShape2D9" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
@@ -97,7 +92,6 @@ shape = SubResource("RectangleShape2D_6cdkp")
 [node name="CollisionShape2D10" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
 position = Vector2(321, -0.00186157)
 rotation = -1.5708
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_6cdkp")
 
 [node name="CollisionShape2D11" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
@@ -108,7 +102,6 @@ shape = SubResource("RectangleShape2D_6cdkp")
 [node name="CollisionShape2D12" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
 position = Vector2(301.642, 109.787)
 rotation = -1.22174
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_6cdkp")
 
 [node name="CollisionShape2D13" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
@@ -139,7 +132,6 @@ shape = SubResource("RectangleShape2D_6cdkp")
 [node name="CollisionShape2D18" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
 position = Vector2(160.502, 277.993)
 rotation = -0.523604
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_6cdkp")
 
 [node name="CollisionShape2D19" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
@@ -149,7 +141,6 @@ shape = SubResource("RectangleShape2D_6cdkp")
 [node name="CollisionShape2D20" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
 position = Vector2(-55.7411, 316.123)
 rotation = 0.174533
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_6cdkp")
 
 [node name="CollisionShape2D21" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
@@ -160,7 +151,6 @@ shape = SubResource("RectangleShape2D_6cdkp")
 [node name="CollisionShape2D22" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
 position = Vector2(-160.5, 277.994)
 rotation = 0.523599
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_6cdkp")
 
 [node name="CollisionShape2D23" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
@@ -176,13 +166,11 @@ shape = SubResource("RectangleShape2D_6cdkp")
 [node name="CollisionShape2D25" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
 position = Vector2(-277.994, 160.5)
 rotation = 1.0472
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_6cdkp")
 
 [node name="CollisionShape2D26" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
 position = Vector2(-301.641, 109.788)
 rotation = 1.22173
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_6cdkp")
 
 [node name="CollisionShape2D27" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
@@ -203,7 +191,6 @@ shape = SubResource("RectangleShape2D_6cdkp")
 [node name="CollisionShape2D30" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
 position = Vector2(-301.642, -109.788)
 rotation = 1.91986
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_6cdkp")
 
 [node name="CollisionShape2D31" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]

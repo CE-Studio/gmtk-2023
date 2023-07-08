@@ -663,7 +663,9 @@ text = "Music Volume"
 
 [node name="MusSlider" type="HSlider" parent="MenuElements/Options/VBoxContainer"]
 layout_mode = 2
-value = 50.0
+max_value = 1.0
+step = 0.01
+value = 0.75
 tick_count = 5
 ticks_on_borders = true
 
@@ -673,7 +675,9 @@ text = "Sound Volume"
 
 [node name="SfxSlider" type="HSlider" parent="MenuElements/Options/VBoxContainer"]
 layout_mode = 2
-value = 50.0
+max_value = 1.0
+step = 0.01
+value = 0.75
 tick_count = 5
 ticks_on_borders = true
 
@@ -768,6 +772,13 @@ theme_override_font_sizes/font_size = 32
 text = "Songs used: Nine, Flip"
 horizontal_alignment = 1
 
+[node name="SfxCredit" type="Label" parent="MenuElements/Credits/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "Sound Effects provided by freesound.org by
+SkyernAklea (CC BY 4.0) and others"
+horizontal_alignment = 1
+
 [node name="BackButton" type="Button" parent="MenuElements/Credits/VBoxContainer"]
 layout_mode = 2
 text = "Return to Main Menu"
@@ -786,6 +797,10 @@ color = Color(0, 0, 0, 0)
 libraries = {
 "": SubResource("AnimationLibrary_mko7m")
 }
+
+[node name="ButtonAudio" type="AudioStreamPlayer" parent="."]
+
+[node name="WhooshAudio" type="AudioStreamPlayer" parent="."]
 
 [connection signal="pressed" from="MenuElements/Main/HBoxContainer/OptionsButton" to="." method="_on_options_button_pressed"]
 [connection signal="pressed" from="MenuElements/Main/HBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
