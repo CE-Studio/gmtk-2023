@@ -109,7 +109,7 @@ tracks/4/keys = {
 "times": PackedFloat32Array(0, 0.8),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(0, 0), Vector2(-150, 0)]
+"values": [Vector2(556, 304), Vector2(406, 304)]
 }
 
 [sub_resource type="Animation" id="Animation_qljrw"]
@@ -149,7 +149,7 @@ tracks/2/keys = {
 "times": PackedFloat32Array(0, 0.8),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(0, 0), Vector2(150, 0)]
+"values": [Vector2(556, 304), Vector2(706, 304)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -206,14 +206,14 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("MenuElements/Main/HBoxContainer:position")
+tracks/2/path = NodePath("MenuElements/Main/Buttons/HBoxContainer:position")
 tracks/2/interp = 2
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0, 2.2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(142, 350), Vector2(142, 1950)]
+"values": [Vector2(-434, 48.5), Vector2(-434, 1950)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -314,7 +314,7 @@ tracks/2/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(0, 0)]
+"values": [Vector2(556, 304)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -391,14 +391,14 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("MenuElements/Main/HBoxContainer:position")
+tracks/9/path = NodePath("MenuElements/Main/Buttons/HBoxContainer:position")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(142, 350)]
+"values": [Vector2(-434, 48.5)]
 }
 tracks/10/type = "value"
 tracks/10/imported = false
@@ -454,23 +454,24 @@ grow_vertical = 2
 color = Color(0.027451, 0.0666667, 0.12549, 1)
 
 [node name="Background" type="Control" parent="."]
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="SpinningBackground" type="Control" parent="Background"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 536.0
-offset_top = 284.0
-offset_right = 576.0
-offset_bottom = 324.0
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="SpinningBackground" type="Control" parent="Background"]
+layout_mode = 1
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
 pivot_offset = Vector2(20, 20)
 script = ExtResource("1_11ggu")
 
@@ -564,10 +565,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 225.0
-offset_top = -27.0
-offset_right = 887.0
-offset_bottom = 635.0
+offset_left = -331.0
+offset_top = -331.0
+offset_right = 331.0
+offset_bottom = 331.0
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(331, 331)
@@ -602,31 +603,41 @@ grow_horizontal = 2
 texture = ExtResource("3_rpc7d")
 script = ExtResource("4_jv607")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MenuElements/Main"]
+[node name="Buttons" type="Control" parent="MenuElements/Main"]
 layout_mode = 1
-anchors_preset = 7
+anchors_preset = 8
 anchor_left = 0.5
-anchor_top = 1.0
+anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -434.0
-offset_top = -298.0
-offset_right = 434.0
-offset_bottom = -201.0
+anchor_bottom = 0.5
 grow_horizontal = 2
-grow_vertical = 0
+grow_vertical = 2
 
-[node name="OptionsButton" type="Button" parent="MenuElements/Main/HBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="MenuElements/Main/Buttons"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -434.0
+offset_top = 48.5
+offset_right = 434.0
+offset_bottom = 145.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="OptionsButton" type="Button" parent="MenuElements/Main/Buttons/HBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 80
 text = "OPTIONS"
 
-[node name="PlayButton" type="Button" parent="MenuElements/Main/HBoxContainer"]
+[node name="PlayButton" type="Button" parent="MenuElements/Main/Buttons/HBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 80
 text = "PLAY"
 
-[node name="CreditsButton" type="Button" parent="MenuElements/Main/HBoxContainer"]
+[node name="CreditsButton" type="Button" parent="MenuElements/Main/Buttons/HBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 80
 text = "CREDITS
@@ -802,9 +813,9 @@ libraries = {
 
 [node name="WhooshAudio" type="AudioStreamPlayer" parent="."]
 
-[connection signal="pressed" from="MenuElements/Main/HBoxContainer/OptionsButton" to="." method="_on_options_button_pressed"]
-[connection signal="pressed" from="MenuElements/Main/HBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
-[connection signal="pressed" from="MenuElements/Main/HBoxContainer/CreditsButton" to="." method="_on_credits_button_pressed"]
+[connection signal="pressed" from="MenuElements/Main/Buttons/HBoxContainer/OptionsButton" to="." method="_on_options_button_pressed"]
+[connection signal="pressed" from="MenuElements/Main/Buttons/HBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="MenuElements/Main/Buttons/HBoxContainer/CreditsButton" to="." method="_on_credits_button_pressed"]
 [connection signal="value_changed" from="MenuElements/Options/VBoxContainer/MusSlider" to="." method="_on_mus_slider_value_changed"]
 [connection signal="value_changed" from="MenuElements/Options/VBoxContainer/SfxSlider" to="." method="_on_sfx_slider_value_changed"]
 [connection signal="value_changed" from="MenuElements/Options/VBoxContainer/ShakeSlider" to="." method="_on_shake_slider_value_changed"]
