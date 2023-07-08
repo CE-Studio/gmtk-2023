@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=9 format=3 uid="uid://b7331fuc54lly"]
+[gd_resource type="Theme" load_steps=9 format=3 uid="uid://oxqh5ng8jysm"]
 
 [ext_resource type="FontFile" uid="uid://dau2ntvbjgd1m" path="res://Font/Fredoka-VariableFont_700.ttf" id="1_lvn25"]
 [ext_resource type="Texture2D" uid="uid://f35wt7vnrwyh" path="res://TitleAssets/ButtonHover.svg" id="2_xwuwn"]

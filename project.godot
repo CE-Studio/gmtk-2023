@@ -18,7 +18,7 @@ InvertRotation=false
 [application]
 
 config/name="The Drop Cup"
-run/main_scene="res://level_main.tscn"
+run/main_scene="res://TitleAssets/main_menu.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
 

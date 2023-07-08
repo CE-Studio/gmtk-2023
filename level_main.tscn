@@ -29,402 +29,212 @@ grow_vertical = 2
 [node name="Node2D" type="Camera2D" parent="."]
 position = Vector2(576, 324)
 
-[node name="Sprite2D" type="Sprite2D" parent="Node2D"]
-texture = ExtResource("1_u3fus")
+[node name="RigidBody2D2" type="RigidBody2D" parent="Node2D"]
+collision_mask = 0
+inertia = 0.01
+gravity_scale = 0.0
+continuous_cd = 2
 script = ExtResource("2_qb34w")
 
-[node name="Line2D" type="Polygon2D" parent="Node2D/Sprite2D"]
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/RigidBody2D2"]
+texture = ExtResource("1_u3fus")
 
-[node name="Node2D3" type="Node2D" parent="Node2D/Sprite2D"]
+[node name="Polygon2D" type="Polygon2D" parent="Node2D/RigidBody2D2/Sprite2D"]
 
-[node name="Node2D2" type="Node2D" parent="Node2D/Sprite2D/Node2D3"]
-rotation = 1.39626
-
-[node name="Node2D4" type="Node2D" parent="Node2D/Sprite2D/Node2D3/Node2D2"]
-rotation = 0.698132
-
-[node name="Node2D2" type="Node2D" parent="Node2D/Sprite2D/Node2D3/Node2D2/Node2D4"]
-rotation = 0.349066
-
-[node name="RigidBody2D2" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D3/Node2D2/Node2D4/Node2D2"]
-rotation = 0.174533
-collision_mask = 0
-freeze = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D/Node2D3/Node2D2/Node2D4/Node2D2/RigidBody2D2"]
-position = Vector2(0, 321)
-shape = SubResource("RectangleShape2D_6cdkp")
-
-[node name="RigidBody2D3" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D3/Node2D2/Node2D4/Node2D2"]
-rotation = 0.349066
-collision_mask = 0
-freeze = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D/Node2D3/Node2D2/Node2D4/Node2D2/RigidBody2D3"]
-position = Vector2(0, 321)
-shape = SubResource("RectangleShape2D_6cdkp")
-
-[node name="RigidBody2D4" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D3/Node2D2/Node2D4/Node2D2"]
-rotation = 0.523599
-collision_mask = 0
-freeze = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D/Node2D3/Node2D2/Node2D4/Node2D2/RigidBody2D4"]
-position = Vector2(0, 321)
-shape = SubResource("RectangleShape2D_6cdkp")
-
-[node name="RigidBody2D" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D3/Node2D2/Node2D4/Node2D2"]
-collision_mask = 0
-freeze = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D/Node2D3/Node2D2/Node2D4/Node2D2/RigidBody2D"]
-position = Vector2(0, 321)
-shape = SubResource("RectangleShape2D_6cdkp")
-
-[node name="Node2D" type="Node2D" parent="Node2D/Sprite2D/Node2D3/Node2D2/Node2D4"]
-
-[node name="RigidBody2D2" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D3/Node2D2/Node2D4/Node2D"]
-rotation = 0.174533
-collision_mask = 0
-freeze = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D/Node2D3/Node2D2/Node2D4/Node2D/RigidBody2D2"]
-position = Vector2(0, 321)
-shape = SubResource("RectangleShape2D_6cdkp")
-
-[node name="RigidBody2D" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D3/Node2D2/Node2D4/Node2D"]
-collision_mask = 0
-freeze = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D/Node2D3/Node2D2/Node2D4/Node2D/RigidBody2D"]
-position = Vector2(0, 321)
-shape = SubResource("RectangleShape2D_6cdkp")
-
-[node name="Node2D3" type="Node2D" parent="Node2D/Sprite2D/Node2D3/Node2D2"]
-
-[node name="Node2D2" type="Node2D" parent="Node2D/Sprite2D/Node2D3/Node2D2/Node2D3"]
-rotation = 0.349066
-
-[node name="RigidBody2D2" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D3/Node2D2/Node2D3/Node2D2"]
-rotation = 0.174533
-collision_mask = 0
-freeze = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D/Node2D3/Node2D2/Node2D3/Node2D2/RigidBody2D2"]
-position = Vector2(0, 321)
-shape = SubResource("RectangleShape2D_6cdkp")
-
-[node name="RigidBody2D" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D3/Node2D2/Node2D3/Node2D2"]
-collision_mask = 0
-freeze = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D/Node2D3/Node2D2/Node2D3/Node2D2/RigidBody2D"]
-position = Vector2(0, 321)
-shape = SubResource("RectangleShape2D_6cdkp")
-
-[node name="Node2D" type="Node2D" parent="Node2D/Sprite2D/Node2D3/Node2D2/Node2D3"]
-
-[node name="RigidBody2D2" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D3/Node2D2/Node2D3/Node2D"]
-rotation = 0.174533
-collision_mask = 0
-freeze = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D/Node2D3/Node2D2/Node2D3/Node2D/RigidBody2D2"]
-position = Vector2(0, 321)
-shape = SubResource("RectangleShape2D_6cdkp")
-
-[node name="RigidBody2D" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D3/Node2D2/Node2D3/Node2D"]
-collision_mask = 0
-freeze = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D/Node2D3/Node2D2/Node2D3/Node2D/RigidBody2D"]
-position = Vector2(0, 321)
-shape = SubResource("RectangleShape2D_6cdkp")
-
-[node name="Node2D" type="Node2D" parent="Node2D/Sprite2D/Node2D3"]
-
-[node name="Node2D4" type="Node2D" parent="Node2D/Sprite2D/Node2D3/Node2D"]
-rotation = 0.698132
-
-[node name="Node2D2" type="Node2D" parent="Node2D/Sprite2D/Node2D3/Node2D/Node2D4"]
-rotation = 0.349066
-
-[node name="RigidBody2D2" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D3/Node2D/Node2D4/Node2D2"]
-rotation = 0.174533
-collision_mask = 0
-freeze = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D/Node2D3/Node2D/Node2D4/Node2D2/RigidBody2D2"]
-position = Vector2(0, 321)
-shape = SubResource("RectangleShape2D_6cdkp")
-
-[node name="RigidBody2D" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D3/Node2D/Node2D4/Node2D2"]
-collision_mask = 0
-freeze = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D/Node2D3/Node2D/Node2D4/Node2D2/RigidBody2D"]
-position = Vector2(0, 321)
-shape = SubResource("RectangleShape2D_6cdkp")
-
-[node name="Node2D" type="Node2D" parent="Node2D/Sprite2D/Node2D3/Node2D/Node2D4"]
-
-[node name="RigidBody2D2" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D3/Node2D/Node2D4/Node2D"]
-rotation = 0.174533
-collision_mask = 0
-freeze = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D/Node2D3/Node2D/Node2D4/Node2D/RigidBody2D2"]
-position = Vector2(0, 321)
-shape = SubResource("RectangleShape2D_6cdkp")
-
-[node name="RigidBody2D" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D3/Node2D/Node2D4/Node2D"]
-collision_mask = 0
-freeze = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D/Node2D3/Node2D/Node2D4/Node2D/RigidBody2D"]
-position = Vector2(0, 321)
-shape = SubResource("RectangleShape2D_6cdkp")
-
-[node name="Node2D3" type="Node2D" parent="Node2D/Sprite2D/Node2D3/Node2D"]
-
-[node name="Node2D2" type="Node2D" parent="Node2D/Sprite2D/Node2D3/Node2D/Node2D3"]
-rotation = 0.349066
-
-[node name="RigidBody2D2" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D3/Node2D/Node2D3/Node2D2"]
-rotation = 0.174533
-collision_mask = 0
-freeze = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D/Node2D3/Node2D/Node2D3/Node2D2/RigidBody2D2"]
-position = Vector2(0, 321)
-shape = SubResource("RectangleShape2D_6cdkp")
-
-[node name="RigidBody2D" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D3/Node2D/Node2D3/Node2D2"]
-collision_mask = 0
-freeze = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D/Node2D3/Node2D/Node2D3/Node2D2/RigidBody2D"]
-position = Vector2(0, 321)
-shape = SubResource("RectangleShape2D_6cdkp")
-
-[node name="Node2D" type="Node2D" parent="Node2D/Sprite2D/Node2D3/Node2D/Node2D3"]
-
-[node name="RigidBody2D2" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D3/Node2D/Node2D3/Node2D"]
-rotation = 0.174533
-collision_mask = 0
-freeze = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D/Node2D3/Node2D/Node2D3/Node2D/RigidBody2D2"]
-position = Vector2(0, 321)
-shape = SubResource("RectangleShape2D_6cdkp")
-
-[node name="RigidBody2D" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D3/Node2D/Node2D3/Node2D"]
-collision_mask = 0
-freeze = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D/Node2D3/Node2D/Node2D3/Node2D/RigidBody2D"]
-position = Vector2(0, 321)
-shape = SubResource("RectangleShape2D_6cdkp")
-
-[node name="Node2D4" type="Node2D" parent="Node2D/Sprite2D"]
-rotation = 3.14159
-
-[node name="Node2D2" type="Node2D" parent="Node2D/Sprite2D/Node2D4"]
-rotation = 1.39626
-
-[node name="Node2D4" type="Node2D" parent="Node2D/Sprite2D/Node2D4/Node2D2"]
-rotation = 0.698132
-
-[node name="Node2D2" type="Node2D" parent="Node2D/Sprite2D/Node2D4/Node2D2/Node2D4"]
-rotation = 0.349066
-
-[node name="RigidBody2D2" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D4/Node2D2/Node2D4/Node2D2"]
-rotation = 0.174533
-collision_mask = 0
-freeze = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D/Node2D4/Node2D2/Node2D4/Node2D2/RigidBody2D2"]
-position = Vector2(0, 321)
-shape = SubResource("RectangleShape2D_6cdkp")
-
-[node name="RigidBody2D3" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D4/Node2D2/Node2D4/Node2D2"]
-rotation = 0.349066
-collision_mask = 0
-freeze = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D/Node2D4/Node2D2/Node2D4/Node2D2/RigidBody2D3"]
-position = Vector2(0, 321)
-shape = SubResource("RectangleShape2D_6cdkp")
-
-[node name="RigidBody2D4" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D4/Node2D2/Node2D4/Node2D2"]
-rotation = 0.523599
-collision_mask = 0
-freeze = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D/Node2D4/Node2D2/Node2D4/Node2D2/RigidBody2D4"]
-position = Vector2(0, 321)
-shape = SubResource("RectangleShape2D_6cdkp")
-
-[node name="RigidBody2D" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D4/Node2D2/Node2D4/Node2D2"]
-collision_mask = 0
-freeze = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D/Node2D4/Node2D2/Node2D4/Node2D2/RigidBody2D"]
-position = Vector2(0, 321)
-shape = SubResource("RectangleShape2D_6cdkp")
-
-[node name="Node2D" type="Node2D" parent="Node2D/Sprite2D/Node2D4/Node2D2/Node2D4"]
-
-[node name="RigidBody2D2" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D4/Node2D2/Node2D4/Node2D"]
-rotation = 0.174533
-collision_mask = 0
-freeze = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D/Node2D4/Node2D2/Node2D4/Node2D/RigidBody2D2"]
-position = Vector2(0, 321)
-shape = SubResource("RectangleShape2D_6cdkp")
-
-[node name="RigidBody2D" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D4/Node2D2/Node2D4/Node2D"]
-collision_mask = 0
-freeze = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D/Node2D4/Node2D2/Node2D4/Node2D/RigidBody2D"]
-position = Vector2(0, 321)
-shape = SubResource("RectangleShape2D_6cdkp")
-
-[node name="Node2D3" type="Node2D" parent="Node2D/Sprite2D/Node2D4/Node2D2"]
-
-[node name="Node2D2" type="Node2D" parent="Node2D/Sprite2D/Node2D4/Node2D2/Node2D3"]
-rotation = 0.349066
-
-[node name="RigidBody2D2" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D4/Node2D2/Node2D3/Node2D2"]
-rotation = 0.174533
-collision_mask = 0
-freeze = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D/Node2D4/Node2D2/Node2D3/Node2D2/RigidBody2D2"]
-position = Vector2(0, 321)
-shape = SubResource("RectangleShape2D_6cdkp")
-
-[node name="RigidBody2D" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D4/Node2D2/Node2D3/Node2D2"]
-collision_mask = 0
-freeze = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D/Node2D4/Node2D2/Node2D3/Node2D2/RigidBody2D"]
-position = Vector2(0, 321)
-shape = SubResource("RectangleShape2D_6cdkp")
-
-[node name="Node2D" type="Node2D" parent="Node2D/Sprite2D/Node2D4/Node2D2/Node2D3"]
-
-[node name="RigidBody2D2" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D4/Node2D2/Node2D3/Node2D"]
-rotation = 0.174533
-collision_mask = 0
-freeze = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D/Node2D4/Node2D2/Node2D3/Node2D/RigidBody2D2"]
-position = Vector2(0, 321)
-shape = SubResource("RectangleShape2D_6cdkp")
-
-[node name="RigidBody2D" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D4/Node2D2/Node2D3/Node2D"]
-collision_mask = 0
-freeze = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D/Node2D4/Node2D2/Node2D3/Node2D/RigidBody2D"]
-position = Vector2(0, 321)
-shape = SubResource("RectangleShape2D_6cdkp")
-
-[node name="Node2D" type="Node2D" parent="Node2D/Sprite2D/Node2D4"]
-
-[node name="Node2D4" type="Node2D" parent="Node2D/Sprite2D/Node2D4/Node2D"]
-rotation = 0.698132
-
-[node name="Node2D2" type="Node2D" parent="Node2D/Sprite2D/Node2D4/Node2D/Node2D4"]
-rotation = 0.349066
-
-[node name="RigidBody2D2" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D4/Node2D/Node2D4/Node2D2"]
-rotation = 0.174533
-collision_mask = 0
-freeze = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D/Node2D4/Node2D/Node2D4/Node2D2/RigidBody2D2"]
-position = Vector2(0, 321)
-shape = SubResource("RectangleShape2D_6cdkp")
-
-[node name="RigidBody2D" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D4/Node2D/Node2D4/Node2D2"]
-collision_mask = 0
-freeze = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D/Node2D4/Node2D/Node2D4/Node2D2/RigidBody2D"]
-position = Vector2(0, 321)
-shape = SubResource("RectangleShape2D_6cdkp")
-
-[node name="Node2D" type="Node2D" parent="Node2D/Sprite2D/Node2D4/Node2D/Node2D4"]
-
-[node name="RigidBody2D2" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D4/Node2D/Node2D4/Node2D"]
-rotation = 0.174533
-collision_mask = 0
-freeze = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D/Node2D4/Node2D/Node2D4/Node2D/RigidBody2D2"]
-position = Vector2(0, 321)
-shape = SubResource("RectangleShape2D_6cdkp")
-
-[node name="RigidBody2D" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D4/Node2D/Node2D4/Node2D"]
-collision_mask = 0
-freeze = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D/Node2D4/Node2D/Node2D4/Node2D/RigidBody2D"]
-position = Vector2(0, 321)
-shape = SubResource("RectangleShape2D_6cdkp")
-
-[node name="Node2D3" type="Node2D" parent="Node2D/Sprite2D/Node2D4/Node2D"]
-
-[node name="Node2D2" type="Node2D" parent="Node2D/Sprite2D/Node2D4/Node2D/Node2D3"]
-rotation = 0.349066
-
-[node name="RigidBody2D2" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D4/Node2D/Node2D3/Node2D2"]
-rotation = 0.174533
-collision_mask = 0
-freeze = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D/Node2D4/Node2D/Node2D3/Node2D2/RigidBody2D2"]
-position = Vector2(0, 321)
-shape = SubResource("RectangleShape2D_6cdkp")
-
-[node name="RigidBody2D" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D4/Node2D/Node2D3/Node2D2"]
-collision_mask = 0
-freeze = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D/Node2D4/Node2D/Node2D3/Node2D2/RigidBody2D"]
-position = Vector2(0, 321)
-shape = SubResource("RectangleShape2D_6cdkp")
-
-[node name="Node2D" type="Node2D" parent="Node2D/Sprite2D/Node2D4/Node2D/Node2D3"]
-
-[node name="RigidBody2D2" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D4/Node2D/Node2D3/Node2D"]
-rotation = 0.174533
-collision_mask = 0
-freeze = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D/Node2D4/Node2D/Node2D3/Node2D/RigidBody2D2"]
-position = Vector2(0, 321)
-shape = SubResource("RectangleShape2D_6cdkp")
-
-[node name="RigidBody2D" type="RigidBody2D" parent="Node2D/Sprite2D/Node2D4/Node2D/Node2D3/Node2D"]
-collision_mask = 0
-freeze = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D/Node2D4/Node2D/Node2D3/Node2D/RigidBody2D"]
-position = Vector2(0, 321)
-shape = SubResource("RectangleShape2D_6cdkp")
-
-[node name="RigidBody2D" type="RigidBody2D" parent="Node2D/Sprite2D"]
-collision_mask = 0
-continuous_cd = 2
-freeze = true
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Node2D/Sprite2D/RigidBody2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Node2D/RigidBody2D2"]
 polygon = PackedVector2Array(-246, 176, -46, 161, -266, 150)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
+position = Vector2(-0.000793457, -321)
+rotation = 3.14159
+shape = SubResource("RectangleShape2D_6cdkp")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
+position = Vector2(55.7403, -316.123)
+rotation = -2.96706
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_6cdkp")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
+position = Vector2(109.788, -301.642)
+rotation = -2.79253
+shape = SubResource("RectangleShape2D_6cdkp")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
+position = Vector2(160.499, -277.995)
+rotation = -2.618
+shape = SubResource("RectangleShape2D_6cdkp")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
+position = Vector2(206.334, -245.901)
+rotation = -2.44346
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_6cdkp")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
+position = Vector2(245.9, -206.335)
+rotation = -2.26893
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_6cdkp")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
+position = Vector2(277.994, -160.501)
+rotation = -2.0944
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_6cdkp")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
+position = Vector2(301.641, -109.789)
+rotation = -1.91986
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_6cdkp")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
+position = Vector2(316.123, -55.7429)
+rotation = -1.74534
+shape = SubResource("RectangleShape2D_6cdkp")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
+position = Vector2(321, -0.00186157)
+rotation = -1.5708
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_6cdkp")
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
+position = Vector2(316.124, 55.7393)
+rotation = -1.39627
+shape = SubResource("RectangleShape2D_6cdkp")
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
+position = Vector2(301.642, 109.787)
+rotation = -1.22174
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_6cdkp")
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
+position = Vector2(277.995, 160.498)
+rotation = -1.0472
+shape = SubResource("RectangleShape2D_6cdkp")
+
+[node name="CollisionShape2D14" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
+position = Vector2(245.901, 206.333)
+rotation = -0.87267
+shape = SubResource("RectangleShape2D_6cdkp")
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
+position = Vector2(206.336, 245.899)
+rotation = -0.698137
+shape = SubResource("RectangleShape2D_6cdkp")
+
+[node name="CollisionShape2D16" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
+position = Vector2(55.7427, 316.123)
+rotation = -0.174538
+shape = SubResource("RectangleShape2D_6cdkp")
+
+[node name="CollisionShape2D17" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
+position = Vector2(109.79, 301.641)
+rotation = -0.349071
+shape = SubResource("RectangleShape2D_6cdkp")
+
+[node name="CollisionShape2D18" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
+position = Vector2(160.502, 277.993)
+rotation = -0.523604
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_6cdkp")
+
+[node name="CollisionShape2D19" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
+position = Vector2(0, 321)
+shape = SubResource("RectangleShape2D_6cdkp")
+
+[node name="CollisionShape2D20" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
+position = Vector2(-55.7411, 316.123)
+rotation = 0.174533
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_6cdkp")
+
+[node name="CollisionShape2D21" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
+position = Vector2(-109.789, 301.641)
+rotation = 0.349066
+shape = SubResource("RectangleShape2D_6cdkp")
+
+[node name="CollisionShape2D22" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
+position = Vector2(-160.5, 277.994)
+rotation = 0.523599
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_6cdkp")
+
+[node name="CollisionShape2D23" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
+position = Vector2(-206.335, 245.9)
+rotation = 0.698132
+shape = SubResource("RectangleShape2D_6cdkp")
+
+[node name="CollisionShape2D24" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
+position = Vector2(-245.9, 206.335)
+rotation = 0.872665
+shape = SubResource("RectangleShape2D_6cdkp")
+
+[node name="CollisionShape2D25" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
+position = Vector2(-277.994, 160.5)
+rotation = 1.0472
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_6cdkp")
+
+[node name="CollisionShape2D26" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
+position = Vector2(-301.641, 109.788)
+rotation = 1.22173
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_6cdkp")
+
+[node name="CollisionShape2D27" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
+position = Vector2(-316.123, 55.7421)
+rotation = 1.39626
+shape = SubResource("RectangleShape2D_6cdkp")
+
+[node name="CollisionShape2D28" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
+position = Vector2(-321, 0.00106812)
+rotation = 1.57079
+shape = SubResource("RectangleShape2D_6cdkp")
+
+[node name="CollisionShape2D29" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
+position = Vector2(-316.123, -55.7401)
+rotation = 1.74533
+shape = SubResource("RectangleShape2D_6cdkp")
+
+[node name="CollisionShape2D30" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
+position = Vector2(-301.642, -109.788)
+rotation = 1.91986
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_6cdkp")
+
+[node name="CollisionShape2D31" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
+position = Vector2(-277.995, -160.499)
+rotation = 2.09439
+shape = SubResource("RectangleShape2D_6cdkp")
+
+[node name="CollisionShape2D32" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
+position = Vector2(-245.901, -206.334)
+rotation = 2.26892
+shape = SubResource("RectangleShape2D_6cdkp")
+
+[node name="CollisionShape2D33" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
+position = Vector2(-206.336, -245.9)
+rotation = 2.44346
+shape = SubResource("RectangleShape2D_6cdkp")
+
+[node name="CollisionShape2D34" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
+position = Vector2(-55.7419, -316.123)
+rotation = 2.96706
+shape = SubResource("RectangleShape2D_6cdkp")
+
+[node name="CollisionShape2D35" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
+position = Vector2(-109.789, -301.641)
+rotation = 2.79252
+shape = SubResource("RectangleShape2D_6cdkp")
+
+[node name="CollisionShape2D36" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
+position = Vector2(-160.501, -277.994)
+rotation = 2.61799
+shape = SubResource("RectangleShape2D_6cdkp")
 
 [node name="RigidBody2D" type="RigidBody2D" parent="Node2D"]
 continuous_cd = 2
