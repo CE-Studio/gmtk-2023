@@ -1,0 +1,157 @@
+[gd_scene load_steps=7 format=3 uid="uid://cbvol5ee4qyu0"]
+
+[ext_resource type="Script" path="res://TitleAssets/SpinningBackground.gd" id="1_11ggu"]
+[ext_resource type="Texture2D" uid="uid://b3c4mla1vkds8" path="res://TitleAssets/TitleBGSpoke.svg" id="2_beuy1"]
+[ext_resource type="Texture2D" uid="uid://5kcjrfiqycjj" path="res://TitleAssets/Title.png" id="3_rpc7d"]
+[ext_resource type="Texture2D" uid="uid://dvokjyy68i4h2" path="res://backing.svg" id="3_sme5w"]
+[ext_resource type="Script" path="res://TitleAssets/BGRingExpand.gd" id="4_0bvoi"]
+[ext_resource type="Script" path="res://TitleAssets/TitleBob.gd" id="4_jv607"]
+
+[node name="main_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.027451, 0.0666667, 0.12549, 1)
+
+[node name="SpinningBackground" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(20, 20)
+script = ExtResource("1_11ggu")
+
+[node name="TextureRect" type="TextureRect" parent="SpinningBackground"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -64.0
+offset_top = 20.0
+offset_right = 64.0
+offset_bottom = 920.0
+grow_horizontal = 2
+pivot_offset = Vector2(64, 0)
+texture = ExtResource("2_beuy1")
+
+[node name="TextureRect2" type="TextureRect" parent="SpinningBackground"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -64.0
+offset_top = 20.0
+offset_right = 64.0
+offset_bottom = 920.0
+grow_horizontal = 2
+rotation = 1.0472
+pivot_offset = Vector2(64, 0)
+texture = ExtResource("2_beuy1")
+
+[node name="TextureRect3" type="TextureRect" parent="SpinningBackground"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -64.0
+offset_top = 20.0
+offset_right = 64.0
+offset_bottom = 920.0
+grow_horizontal = 2
+rotation = 2.0944
+pivot_offset = Vector2(64, 0)
+texture = ExtResource("2_beuy1")
+
+[node name="TextureRect4" type="TextureRect" parent="SpinningBackground"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -64.0
+offset_top = 20.0
+offset_right = 64.0
+offset_bottom = 920.0
+grow_horizontal = 2
+rotation = 3.14159
+pivot_offset = Vector2(64, 0)
+texture = ExtResource("2_beuy1")
+
+[node name="TextureRect5" type="TextureRect" parent="SpinningBackground"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -64.0
+offset_top = 20.0
+offset_right = 64.0
+offset_bottom = 920.0
+grow_horizontal = 2
+rotation = 4.18879
+pivot_offset = Vector2(64, 0)
+texture = ExtResource("2_beuy1")
+
+[node name="TextureRect6" type="TextureRect" parent="SpinningBackground"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -64.0
+offset_top = 20.0
+offset_right = 64.0
+offset_bottom = 920.0
+grow_horizontal = 2
+rotation = 5.23599
+pivot_offset = Vector2(64, 0)
+texture = ExtResource("2_beuy1")
+
+[node name="BackgroundRings" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(331, 331)
+texture = ExtResource("3_sme5w")
+script = ExtResource("4_0bvoi")
+
+[node name="Title" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.29
+anchor_right = 0.5
+anchor_bottom = 0.29
+offset_left = -412.5
+offset_top = -153.92
+offset_right = 412.5
+offset_bottom = 178.08
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_rpc7d")
+script = ExtResource("4_jv607")
