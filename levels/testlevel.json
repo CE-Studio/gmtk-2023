@@ -146,6 +146,14 @@
       ],
       "rot": 1.39626336097717,
       "type": "res://game components/laser.tscn"
+    },
+    {
+      "pos": [
+        -21,
+        -270
+      ],
+      "rot": 0,
+      "type": "res://game components/laserbutton.tscn"
     }
   ],
   "name": "testlevel"
