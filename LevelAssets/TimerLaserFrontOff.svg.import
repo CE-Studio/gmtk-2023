@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cp2odt6xua2u1"
-path="res://.godot/imported/SwitchRectOff.svg-6e7d663bb77438336a8451f9f6cd8842.ctex"
+uid="uid://50eqxjqsmgvf"
+path="res://.godot/imported/TimerLaserFrontOff.svg-34b023b77ab28bbe0f722a4cdfb5884b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://LevelAssets/SwitchRectOff.svg"
-dest_files=["res://.godot/imported/SwitchRectOff.svg-6e7d663bb77438336a8451f9f6cd8842.ctex"]
+source_file="res://LevelAssets/TimerLaserFrontOff.svg"
+dest_files=["res://.godot/imported/TimerLaserFrontOff.svg-34b023b77ab28bbe0f722a4cdfb5884b.ctex"]
 
 [params]
 

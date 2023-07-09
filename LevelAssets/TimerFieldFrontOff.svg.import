@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ctevk5mv85yds"
-path="res://.godot/imported/TimerRectBar.svg-836193b1ed8e7e7e744935faced5be79.ctex"
+uid="uid://bd7bfl7gbt20n"
+path="res://.godot/imported/TimerFieldFrontOff.svg-7f8eb8496d6cc54ab3220e0883276303.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://LevelAssets/TimerRectBar.svg"
-dest_files=["res://.godot/imported/TimerRectBar.svg-836193b1ed8e7e7e744935faced5be79.ctex"]
+source_file="res://LevelAssets/TimerFieldFrontOff.svg"
+dest_files=["res://.godot/imported/TimerFieldFrontOff.svg-7f8eb8496d6cc54ab3220e0883276303.ctex"]
 
 [params]
 

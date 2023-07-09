@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b5vupx4us6ot8"
-path="res://.godot/imported/TimerLaserBar.svg-20d9e677a1e1cf9d3aa39da84f0f3e0a.ctex"
+uid="uid://dr1v7cnofwap6"
+path="res://.godot/imported/TimerLaserBack.svg-e724e97d67b7eeedcd59efef22169e9b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://LevelAssets/TimerLaserBar.svg"
-dest_files=["res://.godot/imported/TimerLaserBar.svg-20d9e677a1e1cf9d3aa39da84f0f3e0a.ctex"]
+source_file="res://LevelAssets/TimerLaserBack.svg"
+dest_files=["res://.godot/imported/TimerLaserBack.svg-e724e97d67b7eeedcd59efef22169e9b.ctex"]
 
 [params]
 

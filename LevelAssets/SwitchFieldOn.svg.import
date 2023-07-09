@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://5xvdcv3r6utq"
-path="res://.godot/imported/SwitchCircOn.svg-7ff628b216affeb91aa8940fb99133d2.ctex"
+uid="uid://rsgbx4d2iqet"
+path="res://.godot/imported/SwitchFieldOn.svg-89b64c6a1f7078ee9d88b6a4b0219148.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://LevelAssets/SwitchCircOn.svg"
-dest_files=["res://.godot/imported/SwitchCircOn.svg-7ff628b216affeb91aa8940fb99133d2.ctex"]
+source_file="res://LevelAssets/SwitchFieldOn.svg"
+dest_files=["res://.godot/imported/SwitchFieldOn.svg-89b64c6a1f7078ee9d88b6a4b0219148.ctex"]
 
 [params]
 

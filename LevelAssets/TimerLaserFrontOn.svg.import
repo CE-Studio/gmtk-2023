@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://hwcw2vdk3fbd"
-path="res://.godot/imported/TimerCirc.svg-120feb1c81adfd975f81cd1ad3cecef2.ctex"
+uid="uid://ch51vbtqbjdmu"
+path="res://.godot/imported/TimerLaserFrontOn.svg-040019522c62f52384c6319dc309eb2f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://LevelAssets/TimerCirc.svg"
-dest_files=["res://.godot/imported/TimerCirc.svg-120feb1c81adfd975f81cd1ad3cecef2.ctex"]
+source_file="res://LevelAssets/TimerLaserFrontOn.svg"
+dest_files=["res://.godot/imported/TimerLaserFrontOn.svg-040019522c62f52384c6319dc309eb2f.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bcwq3mjlck0x4"
-path="res://.godot/imported/SwitchCircOff.svg-504a1ff6bff50cb9723255c40cdc57a2.ctex"
+uid="uid://dwdavip8kaxbl"
+path="res://.godot/imported/TimerFieldBack.svg-265723da929519c71b8f7f169b4a93f0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://LevelAssets/SwitchCircOff.svg"
-dest_files=["res://.godot/imported/SwitchCircOff.svg-504a1ff6bff50cb9723255c40cdc57a2.ctex"]
+source_file="res://LevelAssets/TimerFieldBack.svg"
+dest_files=["res://.godot/imported/TimerFieldBack.svg-265723da929519c71b8f7f169b4a93f0.ctex"]
 
 [params]
 
