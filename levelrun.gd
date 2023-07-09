@@ -7,7 +7,7 @@ var cycle := 0.0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-    build("res://levels/groundFloor.json")
+    build("res://levels/testlevel.json")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -18,10 +18,11 @@ func _process(delta):
         apply_torque(Input.get_axis("game_move_right", "game_move_left") * delta * 8)
     else:
         apply_torque(Input.get_axis("game_move_left", "game_move_right") * delta * 8)
+    $"../content".rotation = rotation
         
         
 func build(level:String) -> void:
-    for i in $content.get_children():
+    for i in $"../content".get_children():
         i.queue_free()
     for i in $"../players".get_children():
         i.queue_free()
@@ -41,6 +42,10 @@ func build(level:String) -> void:
         if c["type"] == "res://game components/player.tscn":
             $"../players".add_child(h)
         else:
-            $content.add_child(h)
+            $"../content".add_child(h)
         h.position = Vector2(c["pos"][0], c["pos"][1])
         h.rotation = c["rot"]
+        
+
+func lost():
+    pass

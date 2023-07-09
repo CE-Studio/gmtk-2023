@@ -1,104 +1,112 @@
 {
-	"cycle": 0,
-	"geom": [
-		[
-			-136,
-			292
-		],
-		[
-			150,
-			8
-		],
-		[
-			53,
-			-215
-		],
-		[
-			29,
-			-184
-		],
-		[
-			106,
-			7
-		],
-		[
-			-8,
-			105
-		],
-		[
-			-111,
-			-92
-		],
-		[
-			-128,
-			-73
-		],
-		[
-			-46,
-			135
-		],
-		[
-			-253,
-			198.5
-		]
-	],
-	"items": [
-		{
-			"pos": [
-				-230,
-				3
-			],
-			"rot": 0,
-			"type": "res://game components/player.tscn"
-		},
-		{
-			"pos": [
-				-194,
-				-129
-			],
-			"rot": 0,
-			"type": "res://game components/player.tscn"
-		},
-		{
-			"pos": [
-				-60,
-				-178
-			],
-			"rot": 0,
-			"type": "res://game components/player.tscn"
-		},
-		{
-			"pos": [
-				-9,
-				-96
-			],
-			"rot": 0,
-			"type": "res://game components/player.tscn"
-		},
-		{
-			"pos": [
-				215,
-				-107
-			],
-			"rot": 0,
-			"type": "res://game components/player.tscn"
-		},
-		{
-			"pos": [
-				23,
-				12.5
-			],
-			"rot": 4.32841634750366,
-			"type": "res://game components/player.tscn"
-		},
-		{
-			"pos": [
-				86,
-				205.5
-			],
-			"rot": 0,
-			"type": "res://game components/Goal.tscn"
-		}
-	],
-	"name": "testlevel"
+  "cycle": 0,
+  "geom": [
+    [
+      -136,
+      292
+    ],
+    [
+      150,
+      8
+    ],
+    [
+      53,
+      -215
+    ],
+    [
+      29,
+      -184
+    ],
+    [
+      106,
+      7
+    ],
+    [
+      -8,
+      105
+    ],
+    [
+      -111,
+      -92
+    ],
+    [
+      -128,
+      -73
+    ],
+    [
+      -46,
+      135
+    ],
+    [
+      -253,
+      198.5
+    ]
+  ],
+  "items": [
+    {
+      "pos": [
+        -230,
+        3
+      ],
+      "rot": 0,
+      "type": "res://game components/player.tscn"
+    },
+    {
+      "pos": [
+        -194,
+        -129
+      ],
+      "rot": 0,
+      "type": "res://game components/player.tscn"
+    },
+    {
+      "pos": [
+        -60,
+        -178
+      ],
+      "rot": 0,
+      "type": "res://game components/player.tscn"
+    },
+    {
+      "pos": [
+        -9,
+        -96
+      ],
+      "rot": 0,
+      "type": "res://game components/player.tscn"
+    },
+    {
+      "pos": [
+        215,
+        -107
+      ],
+      "rot": 0,
+      "type": "res://game components/player.tscn"
+    },
+    {
+      "pos": [
+        23,
+        12.5
+      ],
+      "rot": 4.32841634750366,
+      "type": "res://game components/player.tscn"
+    },
+    {
+      "pos": [
+        86,
+        205.5
+      ],
+      "rot": 0,
+      "type": "res://game components/Goal.tscn"
+    },
+    {
+      "pos": [
+        -7,
+        252
+      ],
+      "rot": 0,
+      "type": "res://game components/saw.tscn"
+    }
+  ],
+  "name": "testlevel"
 }

@@ -1,4 +1,5 @@
 extends RigidBody2D
+class_name Player
 
 
 const APATH = "res://game components/player.tscn"
