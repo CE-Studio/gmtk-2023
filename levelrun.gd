@@ -15,13 +15,15 @@ func _process(delta):
     position = Vector2.ZERO
     
     if ProjectSettings.get_setting("Gameplay/InvertRotation"):
-        apply_torque(Input.get_axis("game_move_right", "game_move_left") * delta * 8)
+        apply_torque(Input.get_axis("game_move_right", "game_move_left") * delta * 1)
     else:
-        apply_torque(Input.get_axis("game_move_left", "game_move_right") * delta * 8)
+        apply_torque(Input.get_axis("game_move_left", "game_move_right") * delta * 1)
     $"../content".rotation = rotation
         
         
 func build(level:String) -> void:
+    rotation = 0
+    
     for i in $"../content".get_children():
         i.queue_free()
     for i in $"../players".get_children():
