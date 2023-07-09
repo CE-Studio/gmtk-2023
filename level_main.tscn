@@ -39,6 +39,8 @@ texture = ExtResource("1_u3fus")
 
 [node name="Polygon2D" type="Polygon2D" parent="Node2D/RigidBody2D2/Sprite2D"]
 
+[node name="content" type="Node2D" parent="Node2D/RigidBody2D2"]
+
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Node2D/RigidBody2D2"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
@@ -219,3 +221,5 @@ shape = SubResource("RectangleShape2D_6cdkp")
 position = Vector2(-160.501, -277.994)
 rotation = 2.61799
 shape = SubResource("RectangleShape2D_6cdkp")
+
+[node name="players" type="Node2D" parent="Node2D"]
