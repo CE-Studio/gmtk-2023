@@ -1,0 +1,144 @@
+{
+  "cycle": 0,
+  "geom": [
+    [
+      307,
+      100
+    ],
+    [
+      39,
+      99
+    ],
+    [
+      39,
+      -49
+    ],
+    [
+      -39,
+      -49
+    ],
+    [
+      -163,
+      99
+    ],
+    [
+      -304,
+      98
+    ],
+    [
+      -302,
+      118
+    ],
+    [
+      304,
+      118
+    ],
+    [
+      312,
+      95
+    ],
+    [
+      322,
+      35
+    ],
+    [
+      324,
+      -9
+    ],
+    [
+      207,
+      -8
+    ],
+    [
+      206,
+      -130
+    ],
+    [
+      -191,
+      -130
+    ],
+    [
+      -317,
+      -17
+    ],
+    [
+      -316,
+      2
+    ],
+    [
+      -182,
+      -114
+    ],
+    [
+      187,
+      -114
+    ],
+    [
+      186,
+      6
+    ],
+    [
+      314,
+      5
+    ]
+  ],
+  "items": [
+    {
+      "pos": [
+        -263,
+        55
+      ],
+      "rot": 0,
+      "type": "res://game components/Goal.tscn"
+    },
+    {
+      "pos": [
+        262,
+        54
+      ],
+      "rot": 0,
+      "type": "res://game components/player.tscn"
+    },
+    {
+      "pos": [
+        52,
+        26
+      ],
+      "rot": 1.55334305763245,
+      "type": "res://game components/laser.tscn"
+    },
+    {
+      "pos": [
+        -167,
+        80
+      ],
+      "rot": 0,
+      "type": "res://game components/saw.tscn"
+    },
+    {
+      "pos": [
+        -131,
+        43
+      ],
+      "rot": 0,
+      "type": "res://game components/saw.tscn"
+    },
+    {
+      "pos": [
+        -96,
+        0
+      ],
+      "rot": 0,
+      "type": "res://game components/saw.tscn"
+    },
+    {
+      "pos": [
+        -62,
+        -35
+      ],
+      "rot": 0,
+      "type": "res://game components/saw.tscn"
+    }
+  ],
+  "name": "firstHazard"
+}
