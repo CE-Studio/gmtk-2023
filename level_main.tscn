@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dlfx7m2tmti6l"]
+[gd_scene load_steps=11 format=3 uid="uid://bvml6jkfuv7fu"]
 
 [ext_resource type="Shader" uid="uid://dd2hnxud0ratn" path="res://bubbletubeshade.tres" id="1_t3m16"]
 [ext_resource type="Texture2D" uid="uid://dvokjyy68i4h2" path="res://backing.svg" id="1_u3fus"]

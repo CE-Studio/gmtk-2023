@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://cra3cqbm5qahk"]
+
+[ext_resource type="Texture2D" uid="uid://dwdavip8kaxbl" path="res://LevelAssets/TimerFieldBack.svg" id="1_585ct"]
+[ext_resource type="Script" path="res://LevelAssets/doortime.gd" id="2_h013h"]
+[ext_resource type="Texture2D" uid="uid://bd7bfl7gbt20n" path="res://LevelAssets/TimerFieldFrontOff.svg" id="3_8x14b"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jevsf"]
+bg_color = Color(0, 0.898039, 0.92549, 1)
+
+[node name="doortime" type="Sprite2D"]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_585ct")
+script = ExtResource("2_h013h")
+
+[node name="Control" type="Control" parent="."]
+clip_contents = true
+layout_mode = 3
+anchors_preset = 0
+offset_left = -107.0
+offset_top = -67.0
+offset_right = 107.0
+offset_bottom = 67.0
+
+[node name="Panel" type="Panel" parent="Control"]
+layout_mode = 0
+offset_left = -233.0
+offset_top = 0.333336
+offset_bottom = 133.333
+theme_override_styles/panel = SubResource("StyleBoxFlat_jevsf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("3_8x14b")

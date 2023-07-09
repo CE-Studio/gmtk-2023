@@ -67,6 +67,9 @@ func build(level:String) -> void:
         h.position = Vector2(c["pos"][0], c["pos"][1])
         h.rotation = c["rot"]
         
+    if cycle == 0:
+        cycle = 1
+        
 
 func lost():
     $Timer.start()
