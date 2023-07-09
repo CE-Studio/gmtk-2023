@@ -6,6 +6,8 @@ var cycle := 0.0
 var doorstate := true
 var laserstate := true
 
+var downtrack := true
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -21,6 +23,13 @@ func _process(delta):
     else:
         apply_torque(Input.get_axis("game_move_left", "game_move_right") * delta * 1)
     $"../content".rotation = rotation
+    
+    if Input.get_action_raw_strength("game_down") > 0.9:
+        if downtrack:
+            down()
+            downtrack = false
+    else:
+        downtrack = true
         
         
 func build(level:String) -> void:
@@ -55,3 +64,10 @@ func build(level:String) -> void:
 
 func lost():
     pass
+    
+
+func down():
+    $AnimationPlayer.stop()
+    $AnimationPlayer.play("down")
+    for i in $"../players".get_children():
+        i.apply_impulse(Vector2.DOWN * 1000)
