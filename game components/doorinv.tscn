@@ -1,10 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://3ashoidmjros"]
+[gd_scene load_steps=6 format=3 uid="uid://3ashoidmjros"]
 
 [ext_resource type="Texture2D" uid="uid://cvkd30cbn0le5" path="res://LevelAssets/ForcefieldRectOff.svg" id="1_nr11l"]
 [ext_resource type="Script" path="res://LevelAssets/doorinv.gd" id="2_qdvvn"]
+[ext_resource type="Texture2D" uid="uid://c5645536eqt2q" path="res://LevelAssets/ForcefieldRectParticle.svg" id="3_46dy1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gnajt"]
 size = Vector2(250, 76)
+
+[sub_resource type="Curve" id="Curve_scfxh"]
+_data = [Vector2(0, 0), 0.0, 5.82201, 0, 0, Vector2(0.239645, 1), 0.0, 0.0, 0, 0, Vector2(0.778107, 0.772727), -0.86252, 0.0, 0, 0, Vector2(1, 0), -5.24612, 0.0, 0, 0]
+point_count = 4
 
 [node name="door" type="Sprite2D" groups=["doorswitchable"]]
 scale = Vector2(0.5, 0.5)
@@ -19,3 +24,39 @@ freeze = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D"]
 shape = SubResource("RectangleShape2D_gnajt")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+position = Vector2(0, -10)
+emitting = false
+amount = 5
+local_coords = true
+texture = ExtResource("3_46dy1")
+emission_shape = 3
+emission_rect_extents = Vector2(1, 25)
+direction = Vector2(0, 1)
+gravity = Vector2(0, 0)
+initial_velocity_max = 15.0
+linear_accel_min = -10.0
+linear_accel_max = 10.0
+scale_amount_min = 0.75
+split_scale = true
+scale_curve_x = SubResource("Curve_scfxh")
+scale_curve_y = null
+
+[node name="CPUParticles2D2" type="CPUParticles2D" parent="."]
+position = Vector2(0, 10)
+emitting = false
+amount = 5
+local_coords = true
+texture = ExtResource("3_46dy1")
+emission_shape = 3
+emission_rect_extents = Vector2(1, 25)
+direction = Vector2(0, -1)
+gravity = Vector2(0, 0)
+initial_velocity_max = 15.0
+linear_accel_min = -10.0
+linear_accel_max = 10.0
+scale_amount_min = 0.75
+split_scale = true
+scale_curve_x = SubResource("Curve_scfxh")
+scale_curve_y = null
