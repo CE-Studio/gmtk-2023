@@ -106,6 +106,38 @@
       ],
       "rot": 0,
       "type": "res://game components/saw.tscn"
+    },
+    {
+      "pos": [
+        183,
+        73
+      ],
+      "rot": 0.680678427219391,
+      "type": "res://game components/door.tscn"
+    },
+    {
+      "pos": [
+        223,
+        156
+      ],
+      "rot": 0.698131680488586,
+      "type": "res://game components/door.tscn"
+    },
+    {
+      "pos": [
+        -229,
+        104.5
+      ],
+      "rot": 2.68780708312988,
+      "type": "res://game components/doorinv.tscn"
+    },
+    {
+      "pos": [
+        145,
+        -224.5
+      ],
+      "rot": 0,
+      "type": "res://game components/button.tscn"
     }
   ],
   "name": "testlevel"

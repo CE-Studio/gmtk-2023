@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://dwfvba243ry63" path="res://TitleAssets/ButtonHover.png" id="1_tj233"]
 [ext_resource type="Texture2D" uid="uid://bf2mpvmni1106" path="res://TitleAssets/ButtonNormal.png" id="2_6jhut"]
 [ext_resource type="Texture2D" uid="uid://vh4rs0baqiec" path="res://TitleAssets/ButtonPressed.png" id="3_1vhtv"]
-[ext_resource type="FontFile" uid="uid://by7bcy0erstnj" path="res://Font/Fredoka-Bold.ttf" id="5_orvku"]
+[ext_resource type="FontFile" uid="uid://dvxvsoaqfgld5" path="res://Font/Fredoka-Bold.ttf" id="5_orvku"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aqgxk"]
 draw_center = false
