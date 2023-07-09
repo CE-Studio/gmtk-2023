@@ -270,6 +270,86 @@
       ],
       "rot": 0,
       "type": "res://game components/player.tscn"
+    },
+    {
+      "pos": [
+        -222,
+        -76
+      ],
+      "rot": 0,
+      "type": "res://game components/saw.tscn"
+    },
+    {
+      "pos": [
+        -279,
+        -87
+      ],
+      "rot": 0,
+      "type": "res://game components/saw.tscn"
+    },
+    {
+      "pos": [
+        -153,
+        -72
+      ],
+      "rot": 0,
+      "type": "res://game components/saw.tscn"
+    },
+    {
+      "pos": [
+        -86,
+        -68
+      ],
+      "rot": 0,
+      "type": "res://game components/saw.tscn"
+    },
+    {
+      "pos": [
+        -25,
+        -69
+      ],
+      "rot": 0,
+      "type": "res://game components/saw.tscn"
+    },
+    {
+      "pos": [
+        38,
+        -70
+      ],
+      "rot": 0,
+      "type": "res://game components/saw.tscn"
+    },
+    {
+      "pos": [
+        97,
+        -69
+      ],
+      "rot": 0,
+      "type": "res://game components/saw.tscn"
+    },
+    {
+      "pos": [
+        153,
+        -66
+      ],
+      "rot": 0,
+      "type": "res://game components/saw.tscn"
+    },
+    {
+      "pos": [
+        223,
+        -67
+      ],
+      "rot": 0,
+      "type": "res://game components/saw.tscn"
+    },
+    {
+      "pos": [
+        288,
+        -63
+      ],
+      "rot": 0,
+      "type": "res://game components/saw.tscn"
     }
   ],
   "name": "teeth"

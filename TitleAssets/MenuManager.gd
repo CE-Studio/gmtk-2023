@@ -4,6 +4,7 @@ extends Control
 @onready var anim:AnimationPlayer = $AnimationPlayer
 @onready var audioButton:AudioStreamPlayer = $ButtonAudio
 @onready var audioWhoosh:AudioStreamPlayer = $WhooshAudio
+@onready var audioMusic:AudioStreamPlayer = $MenuMusic
 
 var sfxMenuButton = preload("res://Sounds/MenuButton.ogg")
 var sfxBackButton = preload("res://Sounds/MenuButtonBack.ogg")
@@ -11,15 +12,22 @@ var sfxSideWhoosh = preload("res://Sounds/MenuWhoosh.ogg")
 var sfxPlayWhoosh = preload("res://Sounds/PlayWhoosh.ogg")
 var sfxSliderTick = preload("res://Sounds/MenuTick.ogg")
 
+@export var musVolumeMult:float = 1
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
     anim.play("FadeIn")
+    audioMusic.volume_db = lerp(-80, 24, ProjectSettings.get_setting("Gameplay/Audio/MusicVolume"))
+    audioButton.volume_db = lerp(-80, 24, ProjectSettings.get_setting("Gameplay/Audio/SoundVolume"))
+    audioWhoosh.volume_db = lerp(-80, 24, ProjectSettings.get_setting("Gameplay/Audio/SoundVolume"))
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-    pass
+    if musVolumeMult < 1:
+        var initialVal = ProjectSettings.get_setting("Gameplay/Audio/MusicVolume")
+        audioMusic.volume_db = lerp(-80, 24, initialVal * musVolumeMult)
     
     
 func _load_game_scene():
@@ -69,6 +77,8 @@ func _on_other_back_button_pressed():
 func _on_mus_slider_value_changed(value):
     ProjectSettings.set_setting("Gameplay/Audio/MusicVolume", value)
     _play_button_sound(sfxSliderTick)
+    var newAudioValue = lerp(-80, 24, value)
+    audioMusic.volume_db = newAudioValue
 
 
 func _on_sfx_slider_value_changed(value):
