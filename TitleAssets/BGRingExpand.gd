@@ -2,7 +2,7 @@ extends TextureRect
 
 @export var scaleFactor = 5.25
 var _minScale = 0.001
-var _maxScale = 2.5
+var _maxScale = 5
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

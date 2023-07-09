@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://wnyt27o7dkes"]
+
+[ext_resource type="Script" path="res://assetbutton.gd" id="1_bc05o"]
+
+[node name="Button" type="Button"]
+custom_minimum_size = Vector2(100, 100)
+offset_right = 8.0
+offset_bottom = 8.0
+script = ExtResource("1_bc05o")
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2(50, 50)
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
