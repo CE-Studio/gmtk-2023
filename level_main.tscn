@@ -307,6 +307,12 @@ libraries = {
 "": SubResource("AnimationLibrary_ver0j")
 }
 
+[node name="Timer" type="Timer" parent="Node2D/RigidBody2D2"]
+wait_time = 3.0
+one_shot = true
+
 [node name="players" type="Node2D" parent="Node2D"]
 
 [node name="content" type="Node2D" parent="Node2D"]
+
+[connection signal="timeout" from="Node2D/RigidBody2D2/Timer" to="Node2D/RigidBody2D2" method="rebuild"]

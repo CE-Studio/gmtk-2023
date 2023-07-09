@@ -1,6 +1,7 @@
 extends RigidBody2D
 
 
+var reset_state := false
 var lname := ""
 var cycle := 0.0
 var doorstate := true
@@ -9,9 +10,13 @@ var laserstate := true
 var downtrack := true
 
 
+func rebuild():
+    get_tree().reload_current_scene()
+
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
-    build("res://levels/testlevel.json")
+    build(Glob.last)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -30,10 +35,11 @@ func _process(delta):
             downtrack = false
     else:
         downtrack = true
-        
+
         
 func build(level:String) -> void:
-    rotation = 0
+    Glob.last = level
+    reset_state = true
     doorstate = true
     laserstate = true
     
@@ -63,7 +69,7 @@ func build(level:String) -> void:
         
 
 func lost():
-    pass
+    $Timer.start()
     
 
 func down():
