@@ -129,7 +129,15 @@
         104.5
       ],
       "rot": 2.68780708312988,
-      "type": "res://game components/door.tscn"
+      "type": "res://game components/doorinv.tscn"
+    },
+    {
+      "pos": [
+        145,
+        -224.5
+      ],
+      "rot": 0,
+      "type": "res://game components/button.tscn"
     }
   ],
   "name": "testlevel"

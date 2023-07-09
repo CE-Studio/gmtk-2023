@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gnajt"]
 size = Vector2(250, 76)
 
-[node name="door" type="Sprite2D"]
+[node name="door" type="Sprite2D" groups=["doorswitchable"]]
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_trmrn")
 script = ExtResource("2_bclij")

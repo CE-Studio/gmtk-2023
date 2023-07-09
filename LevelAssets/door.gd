@@ -7,8 +7,9 @@ var off = preload("res://LevelAssets/ForcefieldRectOff.svg")
 
 
 func switch(state:bool):
-    $AnimatableBody2D.visible = state
     if state:
+        $AnimatableBody2D.process_mode = Node.PROCESS_MODE_INHERIT
         texture = on
     else:
+        $AnimatableBody2D.process_mode = Node.PROCESS_MODE_DISABLED
         texture = off

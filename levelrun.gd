@@ -3,6 +3,8 @@ extends RigidBody2D
 
 var lname := ""
 var cycle := 0.0
+var doorstate := true
+var laserstate := true
 
 
 # Called when the node enters the scene tree for the first time.
@@ -23,6 +25,8 @@ func _process(delta):
         
 func build(level:String) -> void:
     rotation = 0
+    doorstate = true
+    laserstate = true
     
     for i in $"../content".get_children():
         i.queue_free()
