@@ -1,7 +1,7 @@
 extends Sprite2D
 
 
-const APATH = "res://game components/laser.tscn"
+const APATH = "res://game components/laserinv.tscn"
 var on = preload("res://LevelAssets/LaserOn.svg")
 var off = preload("res://LevelAssets/LaserOff.svg")
 var part = preload("res://LevelAssets/deathpart.tscn")
