@@ -78,7 +78,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("MenuElements/Credits:modulate")
+tracks/2/path = NodePath("Credits:modulate")
 tracks/2/interp = 2
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -90,7 +90,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("MenuElements/Credits:position")
+tracks/3/path = NodePath("Credits:position")
 tracks/3/interp = 2
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -130,7 +130,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("MenuElements/Options:position")
+tracks/1/path = NodePath("Options:position")
 tracks/1/interp = 2
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -166,7 +166,7 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("MenuElements/Options:modulate")
+tracks/4/path = NodePath("Options:modulate")
 tracks/4/interp = 2
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -295,7 +295,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("MenuElements/Options:position")
+tracks/1/path = NodePath("Options:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -331,7 +331,7 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("MenuElements/Options:modulate")
+tracks/4/path = NodePath("Options:modulate")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -343,7 +343,7 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("MenuElements/Credits:modulate")
+tracks/5/path = NodePath("Credits:modulate")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
@@ -355,7 +355,7 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("MenuElements/Credits:position")
+tracks/6/path = NodePath("Credits:position")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
@@ -460,19 +460,22 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 556.0
-offset_top = 304.0
-offset_right = 596.0
-offset_bottom = 344.0
+offset_left = -20.0
+offset_top = -20.0
+offset_right = -20.0
+offset_bottom = -20.0
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="SpinningBackground" type="Control" parent="Background"]
 layout_mode = 1
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-pivot_offset = Vector2(20, 20)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_11ggu")
 
 [node name="TextureRect" type="TextureRect" parent="Background/SpinningBackground"]
@@ -481,9 +484,8 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -64.0
-offset_top = 20.0
 offset_right = 64.0
-offset_bottom = 920.0
+offset_bottom = 900.0
 grow_horizontal = 2
 scale = Vector2(2, 2)
 pivot_offset = Vector2(64, 0)
@@ -495,9 +497,8 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -64.0
-offset_top = 20.0
 offset_right = 64.0
-offset_bottom = 920.0
+offset_bottom = 900.0
 grow_horizontal = 2
 rotation = 1.0472
 scale = Vector2(2, 2)
@@ -510,9 +511,8 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -64.0
-offset_top = 20.0
 offset_right = 64.0
-offset_bottom = 920.0
+offset_bottom = 900.0
 grow_horizontal = 2
 rotation = 2.0944
 scale = Vector2(2, 2)
@@ -525,9 +525,8 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -64.0
-offset_top = 20.0
 offset_right = 64.0
-offset_bottom = 920.0
+offset_bottom = 900.0
 grow_horizontal = 2
 rotation = 3.14159
 scale = Vector2(2, 2)
@@ -540,9 +539,8 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -64.0
-offset_top = 20.0
 offset_right = 64.0
-offset_bottom = 920.0
+offset_bottom = 900.0
 grow_horizontal = 2
 rotation = 4.18879
 scale = Vector2(2, 2)
@@ -555,9 +553,8 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -64.0
-offset_top = 20.0
 offset_right = 64.0
-offset_bottom = 920.0
+offset_bottom = 900.0
 grow_horizontal = 2
 rotation = 5.23599
 scale = Vector2(2, 2)
@@ -581,6 +578,159 @@ pivot_offset = Vector2(331, 331)
 texture = ExtResource("3_sme5w")
 script = ExtResource("4_0bvoi")
 
+[node name="Options" type="Control" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1200.0
+offset_right = -48.0
+offset_bottom = 648.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Options"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MusLabel" type="Label" parent="Options/VBoxContainer"]
+layout_mode = 2
+text = "Music Volume"
+
+[node name="MusSlider" type="HSlider" parent="Options/VBoxContainer"]
+layout_mode = 2
+max_value = 1.0
+step = 0.01
+value = 0.75
+tick_count = 5
+ticks_on_borders = true
+
+[node name="SfxLabel" type="Label" parent="Options/VBoxContainer"]
+layout_mode = 2
+text = "Sound Volume"
+
+[node name="SfxSlider" type="HSlider" parent="Options/VBoxContainer"]
+layout_mode = 2
+max_value = 1.0
+step = 0.01
+value = 0.75
+tick_count = 5
+ticks_on_borders = true
+
+[node name="ShakeLabel" type="Label" parent="Options/VBoxContainer"]
+layout_mode = 2
+text = "Screen Shake Intensity"
+
+[node name="ShakeSlider" type="HSlider" parent="Options/VBoxContainer"]
+layout_mode = 2
+value = 50.0
+tick_count = 5
+ticks_on_borders = true
+
+[node name="InvertOption" type="CheckButton" parent="Options/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxEmpty_kklou")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_5derl")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_sj216")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_aumhb")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_68y6k")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_3lq88")
+text = "Invert Rotation"
+
+[node name="BackButton" type="Button" parent="Options/VBoxContainer"]
+layout_mode = 2
+text = "Back to Main Menu"
+
+[node name="Credits" type="Control" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1200.0
+offset_right = 2352.0
+offset_bottom = 648.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Credits"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Header" type="Label" parent="Credits/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 80
+text = "CREDITS"
+horizontal_alignment = 1
+
+[node name="Studio" type="Label" parent="Credits/VBoxContainer"]
+layout_mode = 2
+text = "Developed by CE Studio"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Credits/VBoxContainer"]
+layout_mode = 2
+
+[node name="C" type="Label" parent="Credits/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "CLARENCE
+Head programmer, helping
+Eps re-learn Godot"
+
+[node name="VSeparator" type="VSeparator" parent="Credits/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="E" type="Label" parent="Credits/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "EPSILON
+Game concept, visual design,
+menus"
+
+[node name="Music" type="Label" parent="Credits/VBoxContainer"]
+layout_mode = 2
+text = "Music supplied by Professor Kliq via
+Free Music Archive (CC BY-NC-SA)"
+horizontal_alignment = 1
+
+[node name="Tracklist" type="Label" parent="Credits/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Songs used: Nine, Flip"
+horizontal_alignment = 1
+
+[node name="SfxCredit" type="Label" parent="Credits/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "Sound Effects provided by freesound.org by
+SkyernAklea (CC BY 4.0) and others"
+horizontal_alignment = 1
+
+[node name="BackButton" type="Button" parent="Credits/VBoxContainer"]
+layout_mode = 2
+text = "Return to Main Menu"
+
 [node name="MenuElements" type="Control" parent="."]
 layout_mode = 1
 anchors_preset = 15
@@ -594,8 +744,6 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 1152.0
-offset_bottom = 648.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -623,186 +771,27 @@ grow_vertical = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MenuElements/Main/Buttons"]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = 5
 anchor_left = 0.5
-anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 0.5
 offset_left = -434.0
 offset_top = 48.5
-offset_right = 434.0
-offset_bottom = 145.5
+offset_right = 136.0
+offset_bottom = 144.5
 grow_horizontal = 2
-grow_vertical = 2
 
 [node name="OptionsButton" type="Button" parent="MenuElements/Main/Buttons/HBoxContainer"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 80
 text = "OPTIONS"
 
 [node name="PlayButton" type="Button" parent="MenuElements/Main/Buttons/HBoxContainer"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 80
 text = "PLAY"
 
 [node name="CreditsButton" type="Button" parent="MenuElements/Main/Buttons/HBoxContainer"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 80
 text = "CREDITS
 "
-
-[node name="Options" type="Control" parent="MenuElements"]
-modulate = Color(1, 1, 1, 0)
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -1200.0
-offset_right = -48.0
-offset_bottom = 648.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="VBoxContainer" type="VBoxContainer" parent="MenuElements/Options"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -20.0
-offset_right = 20.0
-offset_bottom = 20.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="MusLabel" type="Label" parent="MenuElements/Options/VBoxContainer"]
-layout_mode = 2
-text = "Music Volume"
-
-[node name="MusSlider" type="HSlider" parent="MenuElements/Options/VBoxContainer"]
-layout_mode = 2
-max_value = 1.0
-step = 0.01
-value = 0.75
-tick_count = 5
-ticks_on_borders = true
-
-[node name="SfxLabel" type="Label" parent="MenuElements/Options/VBoxContainer"]
-layout_mode = 2
-text = "Sound Volume"
-
-[node name="SfxSlider" type="HSlider" parent="MenuElements/Options/VBoxContainer"]
-layout_mode = 2
-max_value = 1.0
-step = 0.01
-value = 0.75
-tick_count = 5
-ticks_on_borders = true
-
-[node name="ShakeLabel" type="Label" parent="MenuElements/Options/VBoxContainer"]
-layout_mode = 2
-text = "Screen Shake Intensity"
-
-[node name="ShakeSlider" type="HSlider" parent="MenuElements/Options/VBoxContainer"]
-layout_mode = 2
-value = 50.0
-tick_count = 5
-ticks_on_borders = true
-
-[node name="InvertOption" type="CheckButton" parent="MenuElements/Options/VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 40
-theme_override_styles/normal = SubResource("StyleBoxEmpty_kklou")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_5derl")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_sj216")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_aumhb")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_68y6k")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_3lq88")
-text = "Invert Rotation"
-
-[node name="BackButton" type="Button" parent="MenuElements/Options/VBoxContainer"]
-layout_mode = 2
-text = "Back to Main Menu"
-
-[node name="Credits" type="Control" parent="MenuElements"]
-modulate = Color(1, 1, 1, 0)
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 1200.0
-offset_right = 2352.0
-offset_bottom = 648.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="VBoxContainer" type="VBoxContainer" parent="MenuElements/Credits"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -20.0
-offset_right = 20.0
-offset_bottom = 20.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="Header" type="Label" parent="MenuElements/Credits/VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 80
-text = "CREDITS"
-horizontal_alignment = 1
-
-[node name="Studio" type="Label" parent="MenuElements/Credits/VBoxContainer"]
-layout_mode = 2
-text = "Developed by CE Studio"
-horizontal_alignment = 1
-
-[node name="HBoxContainer" type="HBoxContainer" parent="MenuElements/Credits/VBoxContainer"]
-layout_mode = 2
-
-[node name="C" type="Label" parent="MenuElements/Credits/VBoxContainer/HBoxContainer"]
-layout_mode = 2
-text = "CLARENCE
-Head programmer, helping
-Eps re-learn Godot"
-
-[node name="VSeparator" type="VSeparator" parent="MenuElements/Credits/VBoxContainer/HBoxContainer"]
-layout_mode = 2
-
-[node name="E" type="Label" parent="MenuElements/Credits/VBoxContainer/HBoxContainer"]
-layout_mode = 2
-text = "EPSILON
-Game concept, visual design,
-menus"
-
-[node name="Music" type="Label" parent="MenuElements/Credits/VBoxContainer"]
-layout_mode = 2
-text = "Music supplied by Professor Kliq via
-Free Music Archive (CC BY-NC-SA)"
-horizontal_alignment = 1
-
-[node name="Tracklist" type="Label" parent="MenuElements/Credits/VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 32
-text = "Songs used: Nine, Flip"
-horizontal_alignment = 1
-
-[node name="SfxCredit" type="Label" parent="MenuElements/Credits/VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 28
-text = "Sound Effects provided by freesound.org by
-SkyernAklea (CC BY 4.0) and others"
-horizontal_alignment = 1
-
-[node name="BackButton" type="Button" parent="MenuElements/Credits/VBoxContainer"]
-layout_mode = 2
-text = "Return to Main Menu"
 
 [node name="FadeColorRect" type="ColorRect" parent="."]
 visible = false
@@ -823,12 +812,12 @@ libraries = {
 
 [node name="WhooshAudio" type="AudioStreamPlayer" parent="."]
 
+[connection signal="value_changed" from="Options/VBoxContainer/MusSlider" to="." method="_on_mus_slider_value_changed"]
+[connection signal="value_changed" from="Options/VBoxContainer/SfxSlider" to="." method="_on_sfx_slider_value_changed"]
+[connection signal="value_changed" from="Options/VBoxContainer/ShakeSlider" to="." method="_on_shake_slider_value_changed"]
+[connection signal="toggled" from="Options/VBoxContainer/InvertOption" to="." method="_on_invert_rotation_toggled"]
+[connection signal="pressed" from="Options/VBoxContainer/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="Credits/VBoxContainer/BackButton" to="." method="_on_other_back_button_pressed"]
 [connection signal="pressed" from="MenuElements/Main/Buttons/HBoxContainer/OptionsButton" to="." method="_on_options_button_pressed"]
 [connection signal="pressed" from="MenuElements/Main/Buttons/HBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
 [connection signal="pressed" from="MenuElements/Main/Buttons/HBoxContainer/CreditsButton" to="." method="_on_credits_button_pressed"]
-[connection signal="value_changed" from="MenuElements/Options/VBoxContainer/MusSlider" to="." method="_on_mus_slider_value_changed"]
-[connection signal="value_changed" from="MenuElements/Options/VBoxContainer/SfxSlider" to="." method="_on_sfx_slider_value_changed"]
-[connection signal="value_changed" from="MenuElements/Options/VBoxContainer/ShakeSlider" to="." method="_on_shake_slider_value_changed"]
-[connection signal="toggled" from="MenuElements/Options/VBoxContainer/InvertOption" to="." method="_on_invert_rotation_toggled"]
-[connection signal="pressed" from="MenuElements/Options/VBoxContainer/BackButton" to="." method="_on_back_button_pressed"]
-[connection signal="pressed" from="MenuElements/Credits/VBoxContainer/BackButton" to="." method="_on_other_back_button_pressed"]
