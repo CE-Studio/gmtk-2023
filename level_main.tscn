@@ -32,14 +32,13 @@ collision_mask = 0
 inertia = 0.01
 gravity_scale = 0.0
 continuous_cd = 2
+can_sleep = false
 script = ExtResource("2_qb34w")
 
 [node name="Sprite2D" type="Sprite2D" parent="Node2D/RigidBody2D2"]
 texture = ExtResource("1_u3fus")
 
 [node name="Polygon2D" type="Polygon2D" parent="Node2D/RigidBody2D2/Sprite2D"]
-
-[node name="content" type="Node2D" parent="Node2D/RigidBody2D2"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Node2D/RigidBody2D2"]
 
@@ -223,3 +222,5 @@ rotation = 2.61799
 shape = SubResource("RectangleShape2D_6cdkp")
 
 [node name="players" type="Node2D" parent="Node2D"]
+
+[node name="content" type="Node2D" parent="Node2D"]
