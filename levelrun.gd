@@ -70,6 +70,29 @@ func build(level:String) -> void:
 
 func lost():
     $Timer.start()
+
+
+func won():
+    if $Timer.is_stopped():
+        if $"../players".get_children().size() <= 1:
+            Glob.currentLevel += 1
+            match Glob.currentLevel:
+                2:
+                    Glob.last = "res://levels/second.json"
+                3:
+                    Glob.last = "res://levels/firstDual.json"
+                4:
+                    Glob.last = "res://levels/firstHazard.json"
+                5:
+                    Glob.last = "res://levels/firstField.json"
+                _:
+                    var levelArray = Array(DirAccess.get_files_at("res://levels/"))
+                    levelArray.shuffle()
+                    while "res://levels/" + levelArray[0] == Glob.last:
+                        levelArray.shuffle()
+                    Glob.last = "res://levels/" + levelArray[0]
+            get_tree().reload_current_scene()
+                    
     
 
 func down():

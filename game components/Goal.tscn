@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://degbb5mdpk2rh"]
+[gd_scene load_steps=7 format=3 uid="uid://degbb5mdpk2rh"]
 
 [ext_resource type="Script" path="res://LevelAssets/Goal.gd" id="1_hcbd5"]
 [ext_resource type="Texture2D" uid="uid://dujtnx4h81axm" path="res://LevelAssets/Goal.svg" id="1_tdake"]
@@ -11,6 +11,8 @@ point_count = 2
 [sub_resource type="Gradient" id="Gradient_16t5j"]
 offsets = PackedFloat32Array(0, 0.117264, 0.527687, 1)
 colors = PackedColorArray(0.596078, 0.952941, 0.972549, 0, 0.619608, 0.956863, 0.972549, 1, 0.619608, 0.827451, 0.984314, 0.839216, 0.290196, 0.564706, 1, 0)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7u7m0"]
 
 [node name="Goal" type="Node2D"]
 scale = Vector2(0.25, 0.25)
@@ -36,3 +38,11 @@ scale_amount_max = 0.8
 scale_amount_curve = SubResource("Curve_rknvi")
 color = Color(0.682353, 0.854902, 1, 1)
 color_ramp = SubResource("Gradient_16t5j")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+scale = Vector2(10, 10)
+shape = SubResource("CircleShape2D_7u7m0")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

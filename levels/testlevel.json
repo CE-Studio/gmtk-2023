@@ -101,59 +101,35 @@
     },
     {
       "pos": [
-        -7,
-        252
+        193,
+        186
       ],
       "rot": 0,
-      "type": "res://game components/saw.tscn"
-    },
-    {
-      "pos": [
-        183,
-        73
-      ],
-      "rot": 0.680678427219391,
-      "type": "res://game components/door.tscn"
-    },
-    {
-      "pos": [
-        223,
-        156
-      ],
-      "rot": 0.698131680488586,
-      "type": "res://game components/door.tscn"
-    },
-    {
-      "pos": [
-        -229,
-        104.5
-      ],
-      "rot": 2.68780708312988,
       "type": "res://game components/doorinv.tscn"
     },
     {
       "pos": [
-        145,
-        -224.5
+        87,
+        -245
       ],
-      "rot": 0,
+      "rot": 2.00712871551514,
+      "type": "res://game components/door.tscn"
+    },
+    {
+      "pos": [
+        -117,
+        109
+      ],
+      "rot": 5.9690260887146,
       "type": "res://game components/button.tscn"
     },
     {
       "pos": [
-        34,
-        -257
-      ],
-      "rot": 1.39626336097717,
-      "type": "res://game components/laser.tscn"
-    },
-    {
-      "pos": [
-        -21,
-        -270
+        144,
+        242
       ],
       "rot": 0,
-      "type": "res://game components/laserbutton.tscn"
+      "type": "res://game components/saw.tscn"
     }
   ],
   "name": "testlevel"

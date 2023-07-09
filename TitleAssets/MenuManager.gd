@@ -31,6 +31,7 @@ func _process(delta):
     
     
 func _load_game_scene():
+    Glob.play_level_music()
     get_tree().change_scene_to_file("res://level_main.tscn")
 
 

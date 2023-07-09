@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://dsik76p4fqntx"]
+[gd_scene load_steps=4 format=3 uid="uid://bbrxug7mqkyd7"]
 
 [ext_resource type="Texture2D" uid="uid://6jf6raq5mj5h" path="res://LevelAssets/LaserOn.svg" id="1_2xdvq"]
 [ext_resource type="Script" path="res://LevelAssets/laser.gd" id="2_x4qqm"]
