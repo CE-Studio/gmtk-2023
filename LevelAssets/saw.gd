@@ -14,5 +14,5 @@ func _on_area_2d_body_entered(body):
         $"/root/Node2D/Node2D/RigidBody2D2".lost()
         var h = part.instantiate()
         h.position = body.position
-        $"../".add_child(h)
+        $"../../".add_child(h)
         body.queue_free()
