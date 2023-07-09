@@ -1,0 +1,112 @@
+{
+  "cycle": 2,
+  "geom": [
+    [
+      -61,
+      316
+    ],
+    [
+      -66,
+      -315
+    ],
+    [
+      53,
+      -312
+    ],
+    [
+      52,
+      312
+    ],
+    [
+      86,
+      311
+    ],
+    [
+      85,
+      -306
+    ],
+    [
+      32,
+      -319
+    ],
+    [
+      -73,
+      -319
+    ],
+    [
+      -96,
+      -312
+    ],
+    [
+      -97,
+      306
+    ]
+  ],
+  "items": [
+    {
+      "pos": [
+        -5,
+        200
+      ],
+      "rot": 0,
+      "type": "res://game components/door.tscn"
+    },
+    {
+      "pos": [
+        -11,
+        30
+      ],
+      "rot": 0,
+      "type": "res://game components/door.tscn"
+    },
+    {
+      "pos": [
+        -5,
+        -173
+      ],
+      "rot": 0,
+      "type": "res://game components/door.tscn"
+    },
+    {
+      "pos": [
+        -8,
+        -74
+      ],
+      "rot": 0,
+      "type": "res://game components/doorinv.tscn"
+    },
+    {
+      "pos": [
+        -1,
+        122
+      ],
+      "rot": 0,
+      "type": "res://game components/doorinv.tscn"
+    },
+    {
+      "pos": [
+        -7,
+        -263
+      ],
+      "rot": 0,
+      "type": "res://game components/Goal.tscn"
+    },
+    {
+      "pos": [
+        -201,
+        -5
+      ],
+      "rot": 0,
+      "type": "res://game components/doortime.tscn"
+    },
+    {
+      "pos": [
+        -9,
+        267
+      ],
+      "rot": 0,
+      "type": "res://game components/player.tscn"
+    }
+  ],
+  "name": "timedrop"
+}
