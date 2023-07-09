@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dlfx7m2tmti6l"]
+[gd_scene load_steps=11 format=3 uid="uid://bvml6jkfuv7fu"]
 
 [ext_resource type="Shader" uid="uid://dd2hnxud0ratn" path="res://bubbletubeshade.tres" id="1_t3m16"]
 [ext_resource type="Texture2D" uid="uid://dvokjyy68i4h2" path="res://backing.svg" id="1_u3fus"]
@@ -15,6 +15,33 @@ shader_parameter/dark = Color(0.231373, 0.258824, 0.505882, 1)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6cdkp"]
 size = Vector2(200, 20)
+
+[sub_resource type="Animation" id="Animation_phkq3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Sprite2D:material:shader_parameter/light")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.232278, 0.260595, 0.505361, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../Sprite2D:material:shader_parameter/dark")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.231373, 0.258824, 0.505882, 1)]
+}
 
 [sub_resource type="Animation" id="Animation_gffk2"]
 resource_name = "down"
@@ -42,33 +69,6 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Color(0.14902, 0.168627, 0.34902, 1), Color(0.14902, 0.168627, 0.34902, 1), Color(0.231373, 0.258824, 0.505882, 1)]
-}
-
-[sub_resource type="Animation" id="Animation_phkq3"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("../Sprite2D:material:shader_parameter/light")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(0.232278, 0.260595, 0.505361, 1)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("../Sprite2D:material:shader_parameter/dark")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(0.231373, 0.258824, 0.505882, 1)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ver0j"]
