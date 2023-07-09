@@ -22,6 +22,10 @@ run/main_scene="res://TitleAssets/main_menu.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Glob="*res://glob.gd"
+
 [input]
 
 game_move_left={
