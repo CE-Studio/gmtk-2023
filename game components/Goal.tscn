@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://degbb5mdpk2rh"]
+[gd_scene load_steps=6 format=3 uid="uid://degbb5mdpk2rh"]
 
+[ext_resource type="Script" path="res://LevelAssets/Goal.gd" id="1_hcbd5"]
 [ext_resource type="Texture2D" uid="uid://dujtnx4h81axm" path="res://LevelAssets/Goal.svg" id="1_tdake"]
 [ext_resource type="Texture2D" uid="uid://mduvyssut1pf" path="res://LevelAssets/GoalParticle.svg" id="2_h76xk"]
 
@@ -13,6 +14,7 @@ colors = PackedColorArray(0.596078, 0.952941, 0.972549, 0, 0.619608, 0.956863, 0
 
 [node name="Goal" type="Node2D"]
 scale = Vector2(0.25, 0.25)
+script = ExtResource("1_hcbd5")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_tdake")

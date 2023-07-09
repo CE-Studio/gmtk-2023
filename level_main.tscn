@@ -1,8 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://dlfx7m2tmti6l"]
+[gd_scene load_steps=4 format=3 uid="uid://dlfx7m2tmti6l"]
 
 [ext_resource type="Texture2D" uid="uid://dvokjyy68i4h2" path="res://backing.svg" id="1_u3fus"]
 [ext_resource type="Script" path="res://levelrun.gd" id="2_qb34w"]
-[ext_resource type="PackedScene" uid="uid://4bns23iolskg" path="res://game components/player.tscn" id="3_viayw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6cdkp"]
 size = Vector2(200, 20)
@@ -41,7 +40,6 @@ texture = ExtResource("1_u3fus")
 [node name="Polygon2D" type="Polygon2D" parent="Node2D/RigidBody2D2/Sprite2D"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Node2D/RigidBody2D2"]
-polygon = PackedVector2Array(-262, 182, -46, 161, -277, 150)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D2"]
 position = Vector2(-0.000793457, -321)
@@ -221,5 +219,3 @@ shape = SubResource("RectangleShape2D_6cdkp")
 position = Vector2(-160.501, -277.994)
 rotation = 2.61799
 shape = SubResource("RectangleShape2D_6cdkp")
-
-[node name="player" parent="Node2D" instance=ExtResource("3_viayw")]

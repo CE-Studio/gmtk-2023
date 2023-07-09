@@ -1,10 +1,7 @@
-extends RigidBody2D
+extends Node2D
 
 
-const APATH = "res://game components/player.tscn"
-
-
-@onready var sprite:Sprite2D = $Sprite2D
+const APATH = "res://game components/Goal.tscn"
 
 
 # Called when the node enters the scene tree for the first time.
@@ -14,4 +11,4 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-    sprite.rotation = -rotation + (angular_velocity / 50)
+    pass
