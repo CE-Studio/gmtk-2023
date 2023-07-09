@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dsik76p4fqntx"]
+
+[ext_resource type="Texture2D" uid="uid://6jf6raq5mj5h" path="res://LevelAssets/LaserOn.svg" id="1_2xdvq"]
+[ext_resource type="Script" path="res://LevelAssets/laser.gd" id="2_x4qqm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gnajt"]
+size = Vector2(250, 24)
+
+[node name="laser" type="Sprite2D" groups=["laserswitchable"]]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_2xdvq")
+script = ExtResource("2_x4qqm")
+
+[node name="AnimatableBody2D" type="Area2D" parent="."]
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D"]
+shape = SubResource("RectangleShape2D_gnajt")
+
+[connection signal="body_entered" from="AnimatableBody2D" to="." method="_on_area_2d_body_entered"]
