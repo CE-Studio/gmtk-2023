@@ -1,7 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://dlfx7m2tmti6l"]
+[gd_scene load_steps=8 format=3 uid="uid://dlfx7m2tmti6l"]
 
+[ext_resource type="Shader" uid="uid://dd2hnxud0ratn" path="res://bubbletubeshade.tres" id="1_t3m16"]
 [ext_resource type="Texture2D" uid="uid://dvokjyy68i4h2" path="res://backing.svg" id="1_u3fus"]
+[ext_resource type="Shader" uid="uid://bufys878sgjmy" path="res://arrow.tres" id="2_dkpwr"]
 [ext_resource type="Script" path="res://levelrun.gd" id="2_qb34w"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fkhjk"]
+shader = ExtResource("1_t3m16")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_y602t"]
+shader = ExtResource("2_dkpwr")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6cdkp"]
 size = Vector2(200, 20)
@@ -14,18 +22,27 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Control" type="Control" parent="."]
+[node name="Control" type="Panel" parent="."]
+material = SubResource("ShaderMaterial_fkhjk")
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
+offset_left = -4500.0
+offset_top = -4500.0
+offset_right = 4500.0
+offset_bottom = 4500.0
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Node2D" type="Camera2D" parent="."]
 position = Vector2(576, 324)
+
+[node name="Sprite2D" type="Polygon2D" parent="Node2D"]
+material = SubResource("ShaderMaterial_y602t")
+polygon = PackedVector2Array(231, 225, 291, 136, 324, 39, 312, -103, 230, -221, 135, -296, 6, -321, -113, -302, -246, -216, -308, -88, -321, 59, -256, 198, -146, 290, -9, 322, 121, 298)
 
 [node name="RigidBody2D2" type="RigidBody2D" parent="Node2D"]
 collision_mask = 0
